@@ -14,7 +14,5 @@ APIC can convert your APIs designs into beautiful functional documentations that
 
 APIC provides a powerfull platofrm for testing your APIs. With features like test suits,multiple environments, schema validations, random data generation; you can perform an end to end testing of your APIs. Know more about thster here.
 
-
-
-# Get started with APIC&gt;&gt;
+# Get started with APIC &gt;&gt;
 
