@@ -8,5 +8,5 @@ APIC privides a simplistic yet a powerful platform to design your APIs by defini
 
 ### Docs {#docs}
 
-
+APIC can convert your APIs designs into beautiful functional documentations that will help others to get on board faster. Know more about Docs here
 
