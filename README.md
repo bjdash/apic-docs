@@ -8,5 +8,9 @@ APIC privides a simplistic yet a powerful platform to design your APIs by defini
 
 ### Docs {#docs}
 
-APIC can convert your APIs designs into beautiful functional documentations that will help others to get on board faster. Know more about Docs here
+APIC can convert your APIs designs into beautiful functional documentations that will help others to get on board faster. Know more about Docs here.
+
+### Tester {#tester}
+
+APIC provides a powerfull platofrm for testing your APIs. With features like test suits,multiple environments, schema validations, random data generation; you can perform an end to end testing of your APIs. Know more about thster here.
 
