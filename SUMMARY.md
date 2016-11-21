@@ -1,5 +1,5 @@
 # Summary
 
 * [About APIC](README.md)
-* [Getting started with APIC](chapter1.md)
+* [Getting started with APIC](/gettingStarted.md)
 
