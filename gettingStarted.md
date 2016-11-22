@@ -8,7 +8,14 @@ APIC provides an end to end solution for APIs staring from **design** to **docum
 
 ![](/assets/apic-navbar.PNG)
 
-* Designer
+* [Designer](/designer.md)
 * Tester
 * Docs
+
+
+
+
+### What's next?
+
+Now that you have come this far; you can [design ](/designer.md)your API or test them or publish a documentation of your API for others to use.
 

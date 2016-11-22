@@ -14,3 +14,7 @@ Coming Soon
 
 Coming Soon
 
+### What's next?
+
+Befor you start here's [what APIC can do for you](/gettingStarted.md).
+
