@@ -8,5 +8,7 @@ APIC provides an end to end solution for APIs staring from **design** to **docum
 
 ![](/assets/apic-navbar.PNG)
 
-
+* Designer
+* Tester
+* Docs
 
