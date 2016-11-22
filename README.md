@@ -1,6 +1,6 @@
 # About APIC {#apic}
 
-APIC provides an end to end solution for APIs staring from **design** to **documentation** to **testing.** With a simplistic UI for Designing APIs and a fature rich platofrm for testing them, APIC provides a common platform your designers, developers and testers.
+APIC provides an end to end solution for APIs staring from **design** to **documentation** to **testing.** With a simplistic UI for Designing APIs and a feature rich platform for testing them, APIC provides a common platform your designers, developers and testers.
 
 ### Designer {#designer}
 
