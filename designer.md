@@ -5,7 +5,7 @@ Every API developemest starts with a design and if you are one of those who beli
 Here's what you can do with the PAIC designer
 
 * Have an exusting Swagger specification? Import it to APIC \(Coming Soon\)
-* Dont have a specification? Create your design from scratch
+* [Dont have a specification? Create your design from scratch](/designer/getting-started-with-designer.md)
 * Getting started with your API design
 * Adding Folders\/Groups to your design
 * Creating Models

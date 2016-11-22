@@ -16,5 +16,5 @@ If you already have an exported API project then importing that into your worksp
 
 ### What's next?
 
-Well, you can start some actual design.
+Well, you can start [some actual design](/designer/working-with-api-design.md).
 
