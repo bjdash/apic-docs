@@ -5,7 +5,7 @@ To start building your API select it from the designer workspace and you will be
 * [Define your project settings](#proj-setting)
 * [Create Folders](/designer/create-folder.md)
 * [Create Models](/designer/create-model.md)
-* Create Traits
+* [Create Traits](/designer/create-trait.md)
 * Create API Endpoints
 * Export and view Docs
 

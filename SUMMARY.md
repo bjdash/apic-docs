@@ -9,5 +9,6 @@
   * [Creating a Folder](designer/create-folder.md)
   * [Creating a Model](designer/create-model.md)
   * [Creating a Trait](designer/create-trait.md)
+  * [Creating an Endpoint](designer/create-endpoint.md)
 
 
