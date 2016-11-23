@@ -8,5 +8,9 @@ To edit a folders select if from the left menu or from the dropdown at the top a
 
 ### Example
 
+For our ToDo application we will create 3 folders, one for models \(**Models**\), one for traits \(**Traits**\) and one for endpoints \(**Endpoints**\).
 
+### What's next?
+
+Next we will [create our ToDo model](/designer/create-model.md).
 
