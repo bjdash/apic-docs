@@ -6,5 +6,6 @@
 * [Designer](designer.md)
   * [Getting Started With APIC designer](designer/getting-started-with-designer.md)
   * [Working with API project](designer/working-with-api-design.md)
+  * [Creating a Folder](designer/create-folder.md)
 
 

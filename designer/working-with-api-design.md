@@ -1,20 +1,19 @@
 # Working with API project
 
-To start building your API select it from the designer workspace and you will be presented with a set of options where you can 
+To start building your API select it from the designer workspace and you will be presented with a set of options where you can
 
 * [Define your project settings](#proj-setting)
-* [Create Folders](#create-folder)
-* [Create Models](#create-models)
-* [Create Traits](#create-traits)
-* [Create API Endpoints](#create-endp)
+* [Create Folders](/designer/create-folder.md)
+* Create Models
+* Create Traits
+* Create API Endpoints
 * Export and view Docs
 
 ![](/assets/APIC-project-home.PNG)
 
-
 ### Project Setting {#proj-setting}
 
-You can set some basic information about your project like **API host name**, **API base path** and **Allowed protocols**, under the Settings panel in your projects home screen. 
+You can set some basic information about your project like **API host name**, **API base path** and **Allowed protocols**, under the Settings panel in your projects home screen.
 
 ### **Create Folders** {#create-folder}
 
@@ -26,7 +25,13 @@ Have a schema that you want to reuse in multiple places? Create a Model. Models 
 
 ### Create Traits {#create-traits}
 
+Traits will help you to define generic request and response patterns like query parameters, headers, response types \(200, 404\) ect and their respective response schemas. You can reuse them with endpoints.
+
 ### Create Endpoints {#create-endp}
 
+Endpoinst are your actual APIs.You can define your API endpoints in your project with request, response types, response schemas etc.
 
+### What's next?
+
+Next we will design APIs for a ToDo Application. But first let's get organized by [creating a folder](/designer/create-folder.md).
 
