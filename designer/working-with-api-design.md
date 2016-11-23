@@ -6,7 +6,7 @@ To start building your API select it from the designer workspace and you will be
 * [Create Folders](/designer/create-folder.md)
 * [Create Models](/designer/create-model.md)
 * [Create Traits](/designer/create-trait.md)
-* Create API Endpoints
+* [Create API Endpoints](/designer/create-endpoint.md)
 * Export and view Docs
 
 ![](/assets/APIC-project-home.PNG)
