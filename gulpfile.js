@@ -17,6 +17,8 @@ var transformString = function (s) {
     
     s = s.replace('GitBook</title>', 'APIC Docs</title>');
     s = s.replace('<body>', '<body class="apic-doc-body">');
+    s = s.replace('href="https://www.gitbook.com"', 'href="http://myapic.com"');
+    s = s.replace('Published with GitBook', '&copy; myapic');
     return s;
 };
  
