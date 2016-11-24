@@ -12,5 +12,5 @@ Lets create a ToDo modes with the **schema** shown above and we will put it unde
 
 ### What's next?
 
-Next we will create some generic response patterns or traits.
+Next we will [create some generic response patterns or traits](/designer/create-trait.md).
 

@@ -6,12 +6,12 @@ Here's what you can do with the PAIC designer
 
 * Have an exusting Swagger specification? Import it to APIC \(Coming Soon\)
 * [Dont have a specification? Create your design from scratch](/designer/getting-started-with-designer.md)
-* Getting started with your API design
-* Adding Folders\/Groups to your design
-* Creating Models
-* Creating Traits
-* Creating Endpoints
-* Export your API design
+* [Getting started with your API design](/designer/getting-started-with-designer.md)
+* [Adding Folders\/Groups to your design](/designer/create-folder.md)
+* [Creating Models](/designer/create-model.md)
+* [Creating Traits](/designer/create-trait.md)
+* [Creating Endpoints](/designer/create-endpoint.md)
+* [Export your API design](/designer/export-docs.md)
 
 ### What's next?
 

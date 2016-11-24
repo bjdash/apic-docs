@@ -10,5 +10,6 @@
   * [Creating a Model](designer/create-model.md)
   * [Creating a Trait](designer/create-trait.md)
   * [Creating an Endpoint](designer/create-endpoint.md)
+  * [Export and view Docs](designer/export-docs.md)
 
 

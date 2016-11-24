@@ -6,13 +6,11 @@ You can create a Trait by clicking on the Traits option in your Project Home pag
 
 ![](/assets/APIC-create-trait.PNG)
 
-
-
 ### Example
 
 Lets create a generic response pattern\/trait for all error codes that out API may return like 404 \(not found\),400 \(bad request\) with the **schema** shown above and we will put it under **Traits** folder.
 
 ### What's next?
 
-Next we will create our API endpoint for creating a ToDo.
+Next we will [create our API endpoint](/designer/create-endpoint.md) for creating a ToDo.
 
