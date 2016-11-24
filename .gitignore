@@ -9,6 +9,9 @@ node_modules
 
 # Book build output
 _book
+apic-doc-build
+build
+dist
 
 # eBook build output
 *.epub

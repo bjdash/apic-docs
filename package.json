@@ -1,0 +1,13 @@
+{
+  "name": "apic-docs",
+  "version": "0.1.0",
+  "main": "electron.js",
+  "devDependencies": {
+    "fs": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-text-simple": "^0.4.0",
+    "gulp-war": "^0.1.4",
+    "gulp-zip": "^3.2.0",
+    "run-sequence": "^1.2.2"
+  }
+}
