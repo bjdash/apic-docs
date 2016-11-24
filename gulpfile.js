@@ -6,11 +6,18 @@ var gulp = require('gulp'),
     runSequence = require('run-sequence');
 
 var transformString = function (s) {
-    s = s.replace('<link rel="stylesheet" href="gitbook/style.css">', '<link rel="stylesheet" href="gitbook/style.css"><link rel="stylesheet" href="gitbook/apic-doc-style.css">');
-    s = s.replace('<link rel="stylesheet" href="../gitbook/style.css">', '<link rel="stylesheet" href="../gitbook/style.css"><link rel="stylesheet" href="gitbook/apic-doc-style.css">');
+    if(s.indexOf('<link rel="stylesheet" href="gitbook/style.css">')>0){
+        s = s.replace('<link rel="stylesheet" href="gitbook/style.css">', '<link rel="stylesheet" href="gitbook/style.css"><link rel="stylesheet" href="assets/apic-doc-style.css">');
+        s = s.replace('<div class="book-summary">', '<div class="book-summary"><div><img src="assets/apic-docs-logo.png" style="width: 145px;"/></div>');
+    }
+    if(s.indexOf('<link rel="stylesheet" href="../gitbook/style.css">')>0){
+        s = s.replace('<link rel="stylesheet" href="../gitbook/style.css">', '<link rel="stylesheet" href="../gitbook/style.css"><link rel="stylesheet" href="../assets/apic-doc-style.css">');
+        s = s.replace('<div class="book-summary">', '<div class="book-summary"><div><img src="../assets/apic-docs-logo.png" style="width: 145px;"/></div>');
+    }
     
-    s = s.replace('gitbook</title>', 'APIC Docs</title>');
-    return s.toLowerCase();
+    s = s.replace('GitBook</title>', 'APIC Docs</title>');
+    s = s.replace('<body>', '<body class="apic-doc-body">');
+    return s;
 };
  
 // create the factory with GulpText simple 
@@ -19,12 +26,12 @@ var myTransformation = textTransformation(transformString);
 gulp.task('editHtml', function () {
     return gulp.src('_book/**/*.html')
         .pipe(myTransformation()) // create the Gulp transformation and insert it into the Gulp stream 
-        .pipe(gulp.dest('apic-doc-build/'));
+        .pipe(gulp.dest('build/'));
 });
 
 gulp.task('copyFiles', function () {
     return gulp.src(['_book/**/*.*', '!_book/**/*.html'])
-        .pipe(gulp.dest('apic-doc-build/'));
+        .pipe(gulp.dest('build/'));
 });
 
 gulp.task('build', function(cb){
@@ -32,7 +39,7 @@ gulp.task('build', function(cb){
 });
 
 gulp.task('war', function () {
-	gulp.src(['./apic-doc-build/**/*.*'])
+	gulp.src(['./build/**/*.*'])
 	.pipe(war({
 			welcome : 'index.html',
 			displayName : 'Apic Docs WAR',

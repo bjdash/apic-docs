@@ -1,0 +1,17 @@
+.apic-doc-body .book-summary ul.summary li a:hover {
+    text-decoration: none;
+    background: #eee;
+}
+.apic-doc-body .book-summary ul.summary li.active>a {
+    color: #008cff;
+    background: #eee;
+    text-decoration: none;
+    border-left: 3px solid red;
+}
+.apic-doc-body .markdown-section h1,.apic-doc-body .markdown-section h2,.apic-doc-body .markdown-section h3,.apic-doc-body .markdown-section h4,.apic-doc-body .markdown-section h5,.apic-doc-body .markdown-section h6{
+    margin-bottom:5px;
+}
+.apic-doc-body #book-search-input {
+    padding:0 6px;
+    margin-bottom:0;
+}
