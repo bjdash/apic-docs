@@ -44,7 +44,7 @@ gulp.task('war', function () {
 			welcome : 'index.html',
 			displayName : 'Apic Docs WAR',
 		}))
-	.pipe(zip('apic-docs.war'))
+	.pipe(zip('docs.war'))
 	.pipe(gulp.dest("./dist"));
 
 });
