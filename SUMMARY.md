@@ -1,11 +1,10 @@
 # Summary
 
-![](/assets/design-icon.PNG)
-
 * [About APIC](README.md)
 * [Installing APIC](installing-apic.md)
 * [Getting started with APIC](gettingStarted.md)
 * [Designer](designer.md)
+
   * [Getting Started With APIC designer](designer/getting-started-with-designer.md)
   * [Working with API project](designer/working-with-api-design.md)
   * [Creating a Folder](designer/create-folder.md)
@@ -15,5 +14,6 @@
   * [Export and view Docs](designer/export-docs.md)
 
 * [Tester](tester.md)
+
 * [Docs](docs.md)
 
