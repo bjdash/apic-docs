@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     war = require('gulp-war'),
     zip = require('gulp-zip'),
     textTransformation = require('gulp-text-simple'),
+    exec = require('child_process').exec,
     runSequence = require('run-sequence');
 
 var transformString = function (s) {
@@ -36,8 +37,17 @@ gulp.task('copyFiles', function () {
         .pipe(gulp.dest('build/'));
 });
 
+
+gulp.task('build:book', function(cb){
+    exec('gitbook build', function (err, stdout, stderr) {
+        console.log(stdout);
+        console.log(stderr);
+        cb(err);
+      });
+});
+
 gulp.task('build', function(cb){
-    return runSequence('copyFiles','editHtml');
+    return runSequence('build:book','copyFiles','editHtml','war');
 });
 
 gulp.task('war', function () {
