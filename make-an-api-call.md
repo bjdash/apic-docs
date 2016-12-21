@@ -10,7 +10,7 @@ Enter the URL you want to run in the URL field. If you want to use http or https
 
 Ex: `https://localhost/todo/create.php`
 
-If no http protocol is specified then default `http://` will be used. 
+If no http protocol is specified then default `http://` will be used.
 
 ### HTTP method
 
@@ -18,7 +18,7 @@ Select the required http method type from the drop-down for example `GET`, `POST
 
 ### Run / Run in loop
 
-To make the request to the specified URL click on the **Run** button. 
+To make the request to the specified URL click on the **Run** button.
 
 Want to run your API multiple times or  want to populate  your database with lot of data then no need to hit **Run** multiple times. You can run your API in a loop. To do so click on the little arrow beside the Run button. This will allow you to enter the number of times you want to run the API. Fill in the value and hit Run beside it. Now apic will run the URL in a loop till it reaches the specified count.
 
@@ -26,14 +26,14 @@ Want to run your API multiple times or  want to populate  your database with lot
 
 URL parameters can be specified under the **URL Params** tab in the **Request** section. Fill in the key and value and hit **Run.** apic will automatically urlencode it and append it to the  URL.
 
-Ex: 
+Ex:
 
 | Key | Value |
 | :--- | :--- |
 | id | 585a449928ea381be8d881b5 |
 | name | test |
 
-For above request parameters you while running you URL will look like 
+For above request parameters you while running you URL will look like
 
 `http://your/url?id=585a449928ea381be8d881b5&name=test`
 
@@ -48,8 +48,6 @@ If you want to send any header along with the request then you can fill that up 
 You can send extra information in the Body of your request for all request typpes except for `GET`. You can specify body in  types
 
 1. **x-www-form-urlencoded**
-
-
 
 
 
