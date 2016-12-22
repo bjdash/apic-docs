@@ -12,8 +12,8 @@
     * [Creating an Endpoint](designer/create-endpoint.md)
     * [Export and view Docs](designer/export-docs.md)
 * [Tester](tester.md)
-    * [Make an API call](make-an-api-call.md)
-    * [Decoding the Response](decoding-the-response.md)
+    * [Make an API call](tester/make-an-api-call.md)
+    * [Viewing API Response](decoding-the-response.md)
 * [Docs](docs.md)
 * [Settings](settings.md)
 

@@ -78,6 +78,24 @@ You can save your current request for future use by clicking on the **Save** but
 
 If you want a copy of an already saved request then click on the small arrow beside the save button and select **Save as**.
 
+* **Authorization**
+
+If you API is asking for Authorization the you can provide that from the Authorization tab. Select the required authorization type from the dropdown and fill up the form.
+**BasicAuth - **basic access authentication is a method for a HTTP user agent to provide a user name and password when making a request. Your provides user name and password will be encodes with base64 algorithm \(not safe\) and sent via **Authorization** header while making the request.
+
+**DigestAuth - Coming soon**
+
+**OAuth 1.0 - Coming soon**
+
+**OAuth 2.0 - Coming soon**
+
+* **Scripts**
+
+Scripts help you to carry out the actual testing for your APIs. You can add 2 types of scripts; pre-run script which is executed before the request is made and post-run script which is executes after the response is received. Learn more about scripting here.
+* **Schema**
+
+You can specify a JASON schema under this section to test if the response you receive from the API is matching to the specified schema or not. Know more about schema validation here.
+
 ### Next: Decoding the Response
 
 
