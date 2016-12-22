@@ -65,18 +65,18 @@ Here also you can use **Environments** or **apic's data generation API** for sen
 
 * **raw**
 
-for content types other than x-www-form-urlencoded and multipart/form-data, you can use raw type to send the data. you can select the content-type from the dropdown beside it \(JSON - application/json, XML - application/xml etc\) and enter the value in the editor below that.
+for content types other than x-www-form-urlencoded and multipart/form-data, you can use raw type to send the data. you can select the content-type from the dropdown beside it \(JSON - application/json, XML - application/xml etc\) and enter the value in the editor below that.  
 As described above you can use **Environments** or **apic's data generation API** for sending dynamic data.
 
 * **Environment**
 
 You can select and environment to run your APIs from the dropdown present at the top right corner of the **Request** panel. Select an environment will allow you to switch between contexts, for example your local system, test environment or production system etc. Know more about how to use environments here.
+
 * **Save request**
 
 You can save your current request for future use by clicking on the **Save** button in the top right corner. This will open a window to select the folder  you want to save. If you don't have any folders created then first create a folder in the left panel before saving.
 
 If you want a copy of an already saved request then click on the small arrow beside the save button and select **Save as**.
-
 
 ### Next: Decoding the Response
 
