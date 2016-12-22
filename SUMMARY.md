@@ -13,7 +13,7 @@
     * [Export and view Docs](designer/export-docs.md)
 * [Tester](tester.md)
     * [Make an API call](tester/make-an-api-call.md)
-    * [Viewing API Response](decoding-the-response.md)
+    * [Viewing API Response](tester/decoding-the-response.md)
 * [Docs](docs.md)
 * [Settings](settings.md)
 

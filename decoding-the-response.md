@@ -1,6 +1,0 @@
-# Decoding the Response
-
-
-
-
-
