@@ -47,7 +47,11 @@ If you want to send any header along with the request then you can fill that up 
 
 You can send extra information in the Body of your request for all request typpes except for `GET`. You can specify body in  types
 
-1. **x-www-form-urlencoded**
+* **x-www-form-urlencoded**
+
+This is the default content type. When you fill up a regular form  in a website and submit, it uses this content type to send the data. If you are sending simple plain text data then this is the right content type. Fill in the key value pair and hit **Run**. Using this will URLencode your data while making the API request. [Read more about this here](https://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1).
+
+* **multipart/form-data**
 
 
 
