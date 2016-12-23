@@ -57,15 +57,15 @@ Ex
 log("Status code is: " + $response.status);
 
 //to see the value of a specific header
-log("Value for header Content-Type: "$response.headers.getValue("content-Type"));
+log("Value for header Content-Type: " + $response.headers.getValue("content-Type"));
 
 // to see the raw response 
 log($response.body);
 
 /*if your response is a JSON data then you can access individual fields in your response
     {
-	"errCode":401,
-	"msg": "Missing todo name"
+    "errCode":401,
+    "msg": "Missing todo name"
     }
 */
 // for the above response you can access the msg & errCode property by using
