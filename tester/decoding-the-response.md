@@ -4,7 +4,7 @@ Once the request is complete you can see the response in the **Response panel** 
 
 ### Body
 
-If a response is returned by the server then you can see under the **Body** tab in the **Response panel**. Under Body tab there are 3 different tabs to see your response.
+If a response is returned by the server then you can see under the **Body** tab in the **Response panel**. You can also see the **Status Code** & **Status Text** for the response along with the **Time taken** for the request to complete at the top right corner of the Response panel. Under Body tab there are 3 different tabs to see your response.
 
 1. **Pretty -** Formats and beautifies the response to make it more user readable.
 2. **Raw - **Shows the response as it is received from the server
@@ -74,4 +74,10 @@ log($response.data.errCode);
 ```
 
 ![](/assets/apic-resp-logs.JPG)
+
+
+
+### Next: [managing Environments](/tester/managing-environments.md)
+
+
 

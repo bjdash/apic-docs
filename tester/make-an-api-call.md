@@ -70,7 +70,7 @@ As described above you can use **Environments** or **apic's data generation API*
 
 ### **Environment**
 
-You can select and environment to run your APIs from the dropdown present at the top right corner of the **Request** panel. Select an environment will allow you to switch between contexts, for example your local system, test environment or production system etc. Know more about how to use environments here.
+You can select an environment to run your APIs from the dropdown present at the top right corner of the **Request** panel. Selecting an environment will allow you to switch between contexts, for example your local system, test environment or production system etc. Know more about how to use environments here.
 
 ### **Save request**
 
@@ -91,7 +91,7 @@ If you API is asking for Authorization the you can provide that from the Authori
 
 ### **Scripts**
 
-Scripts help you to carry out the actual testing for your APIs. You can add 2 types of scripts; pre-run script which is executed before the request is made and post-run script which is executes after the response is received. Learn more about scripting here.
+Scripts help you to carry out the actual testing for your APIs. You can add 2 types of scripts; pre-run script which is executed before the request is made and post-run script which is executes after the response is received. [Learn more about scripting here](/tester/writing-test-cases.md).
 
 ### **Schema**
 
