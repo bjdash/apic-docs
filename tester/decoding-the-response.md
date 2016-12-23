@@ -64,7 +64,7 @@ log($response.body);
 
 /*if your response is a JSON data then you can access individual fields in your response
     {
-    "errCode":401,
+    "errCode":400,
     "msg": "Missing todo name"
     }
 */
@@ -73,5 +73,5 @@ log($response.data.msg);
 log($response.data.errCode);
 ```
 
-
+![](/assets/apic-resp-logs.JPG)
 
