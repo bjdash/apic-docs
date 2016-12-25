@@ -9,13 +9,9 @@ To test the response and its properties, apic creates a response object named `$
   * `body {string}` - The raw response data received in the response.
   * `data {object}` - If the response can be converted to JSON then apic converts it to JSON and stores it under the data property of $response. If the response cant be converted to JSON then `$response.data` will be `undefined`. If the API response looks like `{"msg":"Todo created", "id":"1oFrKEGzoSX2raFHR8xR", "name":"SEo378VnqzdVsCF"}` then you can access `name` by using `$response.data.name` in your scripts. Same for `$response.data.id` and `$response.data.msg`.
   * `headers {object}` - `$response.headers` object holds the list of all headers received in the response as properties and header values as the values for the properties. For example to get the value of Content-Type use `$response.headers['Content-Type']`.
-
   * `headersStr {string}` - The raw string of headers received in the response \(by default headers are received as a string separated with '\n'\).
-
   * `status {number}` - The http status code for the response. Ex: 200, 404.
-
   * `statusText {string}` - The http status text for the response. Ex OK, Not found
-
   * `timeTaken {number}` - Time taken for the request to complete in milliseconds.
 
 
