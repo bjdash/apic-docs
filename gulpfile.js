@@ -39,7 +39,7 @@ gulp.task('copyFiles', function () {
 });
 
 gulp.task('clean', [], function () {
-	console.log("Clean all files in build folder");
+	console.log("Cleaning all files in build folder");
 	return gulp.src("build/*", {
 		read : false
 	}).pipe(clean());
