@@ -15,6 +15,7 @@
     * [Make an API call](tester/make-an-api-call.md)
     * [Viewing API Response](tester/decoding-the-response.md)
     * [Managing Environments](tester/managing-environments.md)
+    * [Using environments](tester/using-environments.md)
     * [Writing test cases](tester/writing-test-cases.md)
 * [Docs](docs.md)
 * [Settings](settings.md)
