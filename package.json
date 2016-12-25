@@ -5,6 +5,7 @@
   "devDependencies": {
     "fs": "0.0.2",
     "gulp": "^3.9.1",
+    "gulp-rimraf": "^0.2.1",
     "gulp-text-simple": "^0.4.0",
     "gulp-war": "^0.1.4",
     "gulp-zip": "^3.2.0",
