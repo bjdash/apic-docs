@@ -54,7 +54,7 @@ gulp.task('build:book', function(cb){
 });
 
 gulp.task('build', function(cb){
-    return runSequence('build:book','copyFiles','editHtml','war');
+    return runSequence('clean','build:book','copyFiles','editHtml','war');
 });
 
 gulp.task('war', function () {
