@@ -10,5 +10,5 @@ Each test case will have a name and a test criteria. For example in the test cas
 
 Alternatively you can also use `TESTS["Status Code is 201"] = $response.status===201`
 
-
+To know what all you can do with scripts please refer to the list of APIs and functions provided by **apic**.
 

@@ -17,6 +17,7 @@
     * [Managing Environments](tester/managing-environments.md)
     * [Using environments](tester/using-environments.md)
     * [Writing test cases](tester/writing-test-cases.md)
+    * [Apic APIs and functions](tester/apic-apis-functions.md)
 * [Docs](docs.md)
 * [Settings](settings.md)
 
