@@ -2,6 +2,8 @@
 
 Apic provides a set of APIs and functions to automate the process op API testing. For example testing checking the status code, checking if a header is present in the response or not etc.
 
+### The response object \($response\)
+
 To test the response and its properties, apic creates a response object named `$response` that has below properties.
 
 * `$response {object}` - This is the main response object which is created when the run is complete.
