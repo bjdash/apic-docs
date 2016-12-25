@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     zip = require('gulp-zip'),
     textTransformation = require('gulp-text-simple'),
     exec = require('child_process').exec,
+    clean = require('gulp-rimraf'),
     runSequence = require('run-sequence');
 
 var transformString = function (s) {
@@ -37,6 +38,12 @@ gulp.task('copyFiles', function () {
         .pipe(gulp.dest('build/'));
 });
 
+gulp.task('clean', [], function () {
+	console.log("Clean all files in build folder");
+	return gulp.src("build/*", {
+		read : false
+	}).pipe(clean());
+});
 
 gulp.task('build:book', function(cb){
     exec('gitbook build', function (err, stdout, stderr) {
