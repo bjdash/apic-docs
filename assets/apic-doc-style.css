@@ -15,3 +15,7 @@
     padding:0 6px;
     margin-bottom:0;
 }
+.markdown-section code{
+    color: #c7254e;
+    background-color: #F9F2F7;
+}
