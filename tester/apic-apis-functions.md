@@ -29,7 +29,7 @@ Sometimes you may need to send dynamic random data while making API calls. We ha
 
 * `String.has(search_str)` - This function can be called on any string to check if the supplied string is present within the main string. Returns `true` or `false`. This can be useful to check if the response body contains certain substring or not.
 
-        Ex:
+Ex:
 ```js
 var str = "this is a sample string";
 str.has("sample"); // check if str contains the string 'sample' or not
@@ -46,7 +46,7 @@ TESTS['Response body has message Login successful'] = $response.body.has('Login 
 
 * `Object.has(property, strictMode)` - This function can be called on any Object to check if the specified property exists in the object ot not. Returns `true` or `false`.  By default the check is done by ignoring the case of the property. If you want to make the check case sensitive pass the second argument `strictMode` as `true`. This can be useful to check if a specific header is present in the response or not
 
-       Ex:
+Ex:
 ```js
 var obj = {
     "name":"user name",
@@ -69,7 +69,7 @@ TESTS['Response has header content-type'] = $response.headers.has("Content-Type"
 
 * `Object.getValue(property, strictMode)` - This function can be called on any Object to get the value of a specific property. By defaulte value is retrived by ignoring the case but to force case sensitive check send the second parameter striceMode as true. This can be useful to het the value of any specific header or getting values from the response data.
 
-       Ex:
+Ex:
 ```js
 var obj = {
     "name":"user name",
