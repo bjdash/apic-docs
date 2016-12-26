@@ -1,4 +1,4 @@
-# Writing Test Cases
+# Writing Tests
 
 With apic you can not only can you run APIs and view response but also test them by adding test cases for the APIs. You can add test cases to your requests under the Scripts tab in the Request panel. You can add 2 types of scripts; pre-run script which is executed before the request is made and post-run script which is executes after the response is received.
 
