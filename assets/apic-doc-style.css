@@ -19,3 +19,8 @@
     color: #c7254e;
     background-color: #F9F2F7;
 }
+.home-icon{
+    float: right;
+    margin: 10px;
+    font-size: 28px;
+}

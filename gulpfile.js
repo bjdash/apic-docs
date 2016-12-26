@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 var transformString = function (s) {
     if(s.indexOf('<link rel="stylesheet" href="gitbook/style.css">')>0){
         s = s.replace('<link rel="stylesheet" href="gitbook/style.css">', '<link rel="stylesheet" href="gitbook/style.css"><link rel="stylesheet" href="assets/apic-doc-style.css">');
-        s = s.replace('<div class="book-summary">', '<div class="book-summary"><div><img src="assets/apic-docs-logo.png" style="width: 145px;"/></div>');
+        s = s.replace('<div class="book-summary">', '<div class="book-summary"><div><img src="assets/apic-docs-logo.png" style="width: 145px;"/><a class="home-icon" href="http://myapic.com" target="_new"><span class="fa fa-home"></span></a></div>');
     }
     if(s.indexOf('<link rel="stylesheet" href="../gitbook/style.css">')>0){
         s = s.replace('<link rel="stylesheet" href="../gitbook/style.css">', '<link rel="stylesheet" href="../gitbook/style.css"><link rel="stylesheet" href="../assets/apic-doc-style.css">');
