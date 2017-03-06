@@ -11,7 +11,5 @@ APIC provides a powerfull platofrm for testing your APIs. With features like tes
 * Export test reports
 * Create and manage environment variables to test your API in different environments
 
-* Requesting an API with apic
-
 
 
