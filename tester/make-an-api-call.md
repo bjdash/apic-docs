@@ -109,7 +109,7 @@ Scripts help you to carry out the actual testing for your APIs. You can add 2 ty
 
 ### **Schema**
 
-You can specify a JASON schema under this section to test if the response you receive from the API is matching to the specified schema or not. Know more about schema validation here.
+You can specify a JSON schema under this section to test if the response you receive from the API is matching to the specified schema or not. Know more about schema validation here.
 
 ### Next: Decoding the Response
 
