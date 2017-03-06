@@ -1,6 +1,6 @@
 # Make an API call
 
-To make an API request open tester module, create a new tab and enter your url in the url section. Select a http method type and click **Run. **You can see the response below under Response section.
+To make an API request open **Tester** module, create a new tab and enter your url in the url section. Select a http method type and click **Run. **You can see the response below under Response section.
 
 ![](/assets/make-http-call.png)
 
@@ -23,6 +23,8 @@ Select the required http method type from the drop-down for example `GET`, `POST
 To make the request to the specified URL click on the **Run** button.
 
 Want to run your API multiple times or  want to populate  your database with lot of data then no need to hit **Run** multiple times. You can run your API in a loop. To do so click on the little arrow beside the Run button. This will allow you to enter the number of times you want to run the API. Fill in the value and hit Run beside it. Now apic will run the URL in a loop till it reaches the specified count.
+
+For sending random data with each API request refer below section.
 
 ### URL Parameters / Query Parameters
 
@@ -67,6 +69,17 @@ Here also you can use **Environments** or **apic's data generation API** for sen
 
 for content types other than x-www-form-urlencoded and multipart/form-data, you can use raw type to send the data. you can select the content-type from the dropdown beside it \(JSON - application/json, XML - application/xml etc\) and enter the value in the editor below that.  
 As described above you can use **Environments** or **apic's data generation API** for sending dynamic data.
+
+* **Sending random data with each call**
+
+To send random data each time you fire the request, you can use APIC's random data generation functions.
+```js
+{
+    "email":"{{apic.randomEmail()}}",
+    "username":"{{apic.randomStr(10)}}",
+    "password":"{{apic.randomStr(10)}}"
+}
+```
 
 ### **Environment**
 
