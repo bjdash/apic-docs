@@ -41,7 +41,7 @@ For above request parameters you while running you URL will look like
 
 `http://your/url?id=585a449928ea381be8d881b5&name=test`
 
-Alternatively you can directly add the URL/Query parameters directly in the URL field itself.
+Alternatively you can add the URL/Query parameters directly in the URL field itself.
 
 ### Headers
 
@@ -55,7 +55,7 @@ You can send extra information in the Body of your request for all request typpe
 
 This is the default content type. When you fill up a regular form  in a website and submit, it uses this content type to send the data. If you are sending simple plain text data then this is the right content type. Fill in the key value pair and hit **Run**. Using this will URLencode your data while making the API request. [More information here](https://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1).
 
-You can also send dynamic values each time you run the request by setting up **Environments** or using **apic's data generation API**. Using Environments will allow you to send data based on the values defined on your selected environment. Apic's data generation API will generate random data each time you make a request.
+You can also send dynamic values each time you run the request by setting up [**Environments** ](/tester/using-environments.md)or using [**apic's data generation API**](/tester/apic-apis-functions.md). Using Environments will allow you to send data based on the values defined on your selected environment. Apic's data generation API will generate random data each time you make a request.
 
 * **multipart/form-data**
 
@@ -63,12 +63,12 @@ The content type "application/x-www-form-urlencoded" is inefficient for sending 
 
 Under the form data tab you can set the key name and from the dropdown at extreme right you can select the type, either text or file. For text you can enter the text value and for files you can click on the browse button and select the file.
 
-Here also you can use **Environments** or **apic's data generation API** for sending dynamic data.
+Here also you can use [**Environments** ](/tester/using-environments.md)or [**apic's data generation API**](/tester/apic-apis-functions.md) for sending dynamic data.
 
 * **raw**
 
 for content types other than x-www-form-urlencoded and multipart/form-data, you can use raw type to send the data. you can select the content-type from the dropdown beside it \(JSON - application/json, XML - application/xml etc\) and enter the value in the editor below that.  
-As described above you can use **Environments** or **apic's data generation API** for sending dynamic data.
+As described above you can use [**Environments** ](/tester/using-environments.md)or [**apic's data generation API**](/tester/apic-apis-functions.md) for sending dynamic data.
 
 * **Sending random data with each API call**
 
