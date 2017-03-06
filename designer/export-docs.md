@@ -4,8 +4,8 @@ APIC can convert your APIs designs into beautiful functional documentations that
 
 APIC also allows you to export your API design in below formats.
 
-* Open API Specifications \(OAS\/Swagger 2\)
-* Raw Data. This can be shared with other users to import the design into their workspace.
+* Open API Specifications \(OAS\Swagger 2\)
+* Raw Data. This can be shared with other APIC users to import the design into their workspace.
 
 ![](/assets/APIC-docs-home.PNG)
 
@@ -13,5 +13,5 @@ APIC also allows you to export your API design in below formats.
 
 ### What's next?
 
-Still want to know more about Documentation? Head over here. Want to test your developed API? We have a sophisticated testing framework with loads of features.
+Still want to know more about Documentation? Head over [here](/docs.md). Want to test your developed API? We have a sophisticated testing framework with loads of features. Check it out [here](/tester.md).
 

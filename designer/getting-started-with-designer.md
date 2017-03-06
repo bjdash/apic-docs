@@ -12,7 +12,7 @@ To create a new API project click on the **+ icon** and fill up the required fie
 
 ### Importing existing API projects {#import-proj}
 
-If you already have an exported API project then importing that into your workspace in just a click away. Just clik on the Import icon present beside your workspace and browse the exported file. APIC will import the project into your workspace.
+If you already have an exported API project then importing that into your workspace is just a click away. Just click on the Import icon present beside your workspace and browse the exported file. APIC will import the project into your workspace.
 
 ### What's next?
 
