@@ -75,8 +75,6 @@ log($response.data.errCode);
 
 ![](/assets/apic-resp-logs.JPG)
 
-
-
 ### Next: [managing Environments](/tester/managing-environments.md)
 
 
