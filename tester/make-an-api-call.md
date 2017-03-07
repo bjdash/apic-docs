@@ -74,7 +74,7 @@ As described above you can use [**Environments** ](/tester/using-environments.md
 
 To send random data each time you fire the request, you can use [APIC's random data generation functions](/tester/apic-apis-functions.md).
 
-For example for generating random email use `"email":"{{ apic.randomEmail() }}"`
+For example for generating random email use `"email":"{{ apic.randomEmail() }}"` . 
 
 ![](/assets/apic-random-data.JPG)
 
