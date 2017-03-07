@@ -74,7 +74,11 @@ As described above you can use [**Environments** ](/tester/using-environments.md
 
 To send random data each time you fire the request, you can use [APIC's random data generation functions](/tester/apic-apis-functions.md).
 
-a `{"email":"{{ apic.randomEmail() }}","username":"{{ apic.randomStr(10) }}","password":"{{ apic.randomStr(10) }}"}` a
+ `{  
+"email":"{{ apic.randomEmail() }}",  
+"username":"{{ apic.randomStr(10) }}",  
+"password":"{{ apic.randomStr(10) }}"  
+}` 
 
 ### **Environment**
 
