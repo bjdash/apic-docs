@@ -74,13 +74,7 @@ As described above you can use [**Environments** ](/tester/using-environments.md
 
 To send random data each time you fire the request, you can use [APIC's random data generation functions](/tester/apic-apis-functions.md).
 
-```js
-{
-    "email":"{{ apic.randomEmail() }}",
-    "username":"{{ apic.randomStr(10) }}",
-    "password":"{{ apic.randomStr(10) }}"
-}
-```
+a `{"email":"{{ apic.randomEmail() }}","username":"{{ apic.randomStr(10) }}","password":"{{ apic.randomStr(10) }}"}` a
 
 ### **Environment**
 
@@ -94,7 +88,7 @@ If you want a copy of an already saved request then click on the small arrow bes
 
 ### **Authorization**
 
-If you API is asking for Authorization the you can provide that from the Authorization tab. Select the required authorization type from the dropdown and fill up the form.  
+If you API is asking for Authorization then you can provide that from the Authorization tab. Select the required authorization type from the dropdown and fill up the details.  
 **BasicAuth - Basic authentication** is a method for a HTTP user agent to provide a user name and password when making a request. Your provides user name and password will be encodes with base64 algorithm \(not safe\) and sent via **Authorization** header while making the request.
 
 **DigestAuth - **APIC supports **Digest authentication**. To add Digest authentication, select Digest Auth under the Authorization tab and fill in the details. This will generate the auth string and add it to **Authorization** header. The supported encryption algorithm for  generation the token are **MD5** and **MD5-sess**.
