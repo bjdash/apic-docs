@@ -76,9 +76,9 @@ To send random data each time you fire the request, you can use [APIC's random d
 
 ```js
 {
-"email":"&lbrace;&lbrace;apic.randomEmail()&lbrace;&lbrace;",
-"username":"{{apic.randomStr(10)}}",
-"password":"{{apic.randomStr(10)}}"
+    "email":"&lbrace;&lbrace; apic.randomEmail() &lbrace;&lbrace;",
+    "username":"&lbrace;&lbrace; apic.randomStr(10) &lbrace;&lbrace;",
+    "password":"&lbrace;&lbrace; apic.randomStr(10) &lbrace;&lbrace;"
 }
 ```
 
