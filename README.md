@@ -1,6 +1,6 @@
 # About APIC {#apic}
 
-APIC provides an end to end solution for APIs staring from **design** to **documentation** to **testing.** With a simplistic UI for Designing APIs and a feature rich platform for testing them, APIC provides a common platform for your designers, developers and testers.
+APIC provides a complete end to end solution for APIs; staring from **design** to **documentation** to **testing.** With a simplistic UI for Designing APIs and a feature rich platform for testing them, APIC provides a common platform for your designers, developers and testers.
 
 ### Designer {#designer}
 
@@ -12,7 +12,7 @@ APIC can convert your APIs designs into beautiful functional documentations that
 
 ### Tester {#tester}
 
-APIC provides a powerfull platofrm for testing your APIs. With features like test suits,multiple environments, schema validations, random data generation; you can perform an end to end testing of your APIs. Know more about Tester [here](/tester.md).
+APIC provides a powerfull platofrm for testing your APIs. With features like [test suits](/tester/creating-test-suits.md),[multiple environments](/tester/using-environments.md), [schema validations](/response-schema-validation.md), [random data generation](/tester/apic-apis-functions.md); you can perform an end to end testing of your APIs. Know more about Tester [here](/tester.md).
 
 ### What's next?
 

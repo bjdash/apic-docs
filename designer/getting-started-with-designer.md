@@ -6,7 +6,7 @@ Its highly prefered to design your APIs before starting to develope them. With A
 
 ### Creating an API design from scratch {#designscratch}
 
-To create a new API project click on the **+ icon** and fill up the required fields **name** and **version** and you are all set for designing your awesome API with APIC.
+To create a new API project click on the **+ icon** and fill up the required fields like **name,** **version** etc and you are all set for designing your awesome API with APIC.
 
 ![](/assets/APIC-new-api-project.PNG)
 

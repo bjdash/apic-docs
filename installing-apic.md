@@ -1,6 +1,6 @@
 # Installing APIC
 
-APIC is available as a Chrome packaged App \(Also works with Chrome OS\), web app \(coming soon\), Native app for Windows, Mac and Linux \(Coming Soon\). You can select any option that suits your need.
+APIC is available as a Chrome packaged App \(Also works with Chrome OS\), web app \(to be used in a browser\), Native app for Windows, Mac \(coming soon\) and Linux \(Coming Soon\). You can select any option that suits your need.
 
 ### APIC Chrome App
 
@@ -16,9 +16,9 @@ You can install APIC from Google Chrome's app store and launch it from Apps pane
 
 You can use APIC directly from your browser by visiting [http://myapic.com/app](http://myapic.com/app).
 
-Warning: The web version of APIC \(APIC testing\) suffers with the limitation of CORS where browsers don't allow access to resources of other domains unless the response contains **Access-Control-Allow-Origin **header with a value of "**\***" or "**myapic.com**" \(without the quotes\). To overcome this issue you need to install a plugin that will allow APIC to access resources on other domains by adding **Access-Control-Allow-Origin: \* **header. You can download the helper plugin for chrome from [https://chrome.google.com/webstore/detail/apic-extension/dejjobgejdajdjjhjcindbjcfohoiehn](https://chrome.google.com/webstore/detail/apic-extension/dejjobgejdajdjjhjcindbjcfohoiehn?hl=en)
+Warning: The web version of APIC \(API testing\) suffers with the limitation of CORS where browsers don't allow access to resources of other domains unless the response contains **Access-Control-Allow-Origin **header with a value of "**\***" or "**myapic.com**" \(without the quotes\). To overcome this issue you need to install a plugin that will allow APIC to access resources on other domains by adding **Access-Control-Allow-Origin: \* **header. You can download the helper plugin for chrome from [https://chrome.google.com/webstore/detail/apic-extension/dejjobgejdajdjjhjcindbjcfohoiehn](https://chrome.google.com/webstore/detail/apic-extension/dejjobgejdajdjjhjcindbjcfohoiehn?hl=en)
 
-For Firefox/IE/Safari you can install equivalent plugins that allow modifying **Access-Control-Allow-Origin **header.
+For Firefox/IE/Safari you can install equivalent plugins that allows modifying **Access-Control-Allow-Origin **header.
 
 ### What's next?
 
