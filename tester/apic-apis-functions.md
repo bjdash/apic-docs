@@ -20,7 +20,7 @@ To test the response and its properties, apic creates a response object named `$
 
 Sometimes you may need to send dynamic random data while making API calls. We have got you covered. Apic provides a set of functions that you can use while making requests to generate dynamic random data.
 
-* `apic.randomStr(length)` - returns a random string of specified length, default 1 character string.
+* `apic.randomStr(minLength/length, maxLength)` - returns a random string with length between `minLength` and `maxLength` .If maxLength is not specified the the returned string is exactly of length `minLength`. If neither is specified, default 1 character string.
 * `apic.randomNum(min, max, isFloat)` - generates a random integer number between the min and max value. Sending the third argument isFloat as true will return float/decimal number.
 * `apic.randomEmail()` - generates valid random email id.
 * `apic.randomInList(list)` - if you want some random values from a list then you can use this function. This will accept a list of anything and will return one entry from the list randomly. Ex: `apic.randomInList([1, 2, 1.111, 'some text', 'etc..'])`.
