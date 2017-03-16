@@ -8,7 +8,7 @@ You can install APIC from Google Chrome's app store and launch it from Apps pane
 
 ### Installing the Native app
 
-* **Windows - **Want to install APIC as standalone app? Download the exe from [http://myapic.com/release/win64/apic Setup 0.0.1.exe](http://myapic.com/release/win64/apic Setup 0.0.1.exe)
+* **Windows - **Want to install APIC as standalone app? Download the exe from [http://myapic.com/release/win64/apic Setup 1.1.2.exe](http://myapic.com/release/win64/apic Setup 1.1.2.exe)
 * **macOS - Coming soon**
 * **Linux - Coming soon**
 
