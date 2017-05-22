@@ -4,15 +4,21 @@ APIC provides a complete end to end solution for APIs; staring from **design** t
 
 ### Designer {#designer}
 
-APIC privides a simplistic yet a powerful platform to design your APIs by defining models, traits and endpoints. It also helps to group them into folders. Know more about the Designer [here](/designer.md).
+APIC privides a simplistic yet a powerful platform to design your APIs by defining models, traits and endpoints. It also helps to group them into folders. [Know more about the Designer](/designer.md).
 
 ### Docs {#docs}
 
-APIC can convert your APIs designs into beautiful functional documentations that will help others to get on board faster. Know more about Docs [here](/docs.md).
+APIC can convert your APIs designs into beautiful functional documentations that will help others to get on board faster. [Know more about Docs](/docs.md).
 
 ### Tester {#tester}
 
-APIC provides a powerful platform for testing your APIs. With features like [test suits](/tester/creating-test-suits.md),[multiple environments](/tester/using-environments.md), [schema validations](/response-schema-validation.md), [random data generation](/tester/apic-apis-functions.md); you can perform an end to end testing of your APIs. Know more about Tester [here](/tester.md).
+APIC provides a powerful platform for testing your APIs. With features like [test suits](/tester/creating-test-suits.md),[multiple environments](/tester/using-environments.md), [schema validations](/response-schema-validation.md), [random data generation](/tester/apic-apis-functions.md); you can perform an end to end testing of your APIs. [Know more about Tester](/tester.md).
+
+### Dashboard
+
+Dashboard allows you to create/manage teams, publish API documentation with third-party developers etc with a lot of new features soon to be added like saving and sharing reports. [Know more about Dashboard](/dashboard.md).
+
+**NB:** Except for dashboard rest op the modules can be used offline. Also note that Dashboard can only be accessed if the user is registered with APIC and is currently logged in to the instance.
 
 ### What's next?
 
