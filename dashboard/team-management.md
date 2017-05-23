@@ -4,11 +4,11 @@ APIC allows seamless sharing of API projects, Requests, TestSuits etc with other
 
 You can see your existing teams here as well as the list of teams you are a member of.
 
- ![](/assets/TeamManagement.jpg)
+![](/assets/TeamManagement.jpg)
 
 ### Creating a Team
 
-To create a new team click on the **`New Team`** button present on the top of the team summary page, give an awesome name for your team and click **`Create`**. Now you can add members to the team and share stuff with them.
+To create a new team click on the `New Team` button present on the top of the team summary page, give an awesome name for your team and click `Create`. Now you can add members to the team and share stuff with them.
 
 ### Adding/Removing Team members
 
@@ -27,6 +27,10 @@ You can delete a team by clicking on the thrash icon beside the team in the list
 ### Existing a team
 
 If you don't want to be a member of a team any more then you can leave the team by clicking on the Exit Team button shown in the **Members of Team** list. Once you leave a team you will loose everything that has been shared with you as a member of that team.
+
+### What's next?
+
+Do you know you can generate beautiful functional documentation for your API project with APIC and also share it with third-party developers. APIC's **`Published Docs`** allow you to publish the documentation online for other third-party developers whome you want to get on board for using your PAIs.
 
 
 

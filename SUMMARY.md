@@ -23,5 +23,6 @@
 * [Docs](docs.md)
 * [Dashboard](dashboard.md)
   * [Team Management](dashboard/team-management.md)
+  * [Published Docs](dashboard/published-docs.md)
 * [Settings](settings.md)
 
