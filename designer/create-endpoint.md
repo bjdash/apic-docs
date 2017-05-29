@@ -10,6 +10,40 @@ You can add a path parameter by putting that in the URL as /api/path/{para-param
 
 ![](/assets/APIC-create-endpoint.PNG)
 
+### Endpoint fields
+
+* Name/Summary
+
+* Path
+
+* HTTP method
+
+* Folder
+
+* Operation Id
+
+* Consumes/produces: Eg: appication/json
+
+* Schemes
+
+* traits
+
+* tags
+
+* Description
+
+* Path parameters
+
+* Query parameters
+
+* Headers
+
+* Body
+
+* Responses
+
+* Pre/Post script
+
 ### Example
 
 Lets create 3 endpoints for our ToDo applicaion for creating ToDo, getting list of ToDo and getting detail of specific ToDo by its id. We can use path params for getting the ToDo detail by id. Our endpoint URL will look like /todo/{todoid}
