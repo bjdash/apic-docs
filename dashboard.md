@@ -10,6 +10,8 @@ Dashboard allows you to do stuff like
 * Create/manage teams
 * Save and share test reports \(Coming soon\)
 
+![](/assets/Dashboard.JPG)
+
 ### What's next?
 
 Well APIC allows you to share stuff with your friends/colleague by creating a team. Lets[ create a team and add some members](/dashboard/team-management.md).

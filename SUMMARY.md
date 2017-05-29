@@ -24,5 +24,6 @@
 * [Dashboard](dashboard.md)
   * [Team Management](dashboard/team-management.md)
   * [Published Docs](dashboard/published-docs.md)
+* [Sharing](sharing.md)
 * [Settings](settings.md)
 
