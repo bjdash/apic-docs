@@ -24,6 +24,7 @@ Sometimes you may need to send dynamic random data while making API calls. We ha
 * `apic.randomNum(min, max, isFloat)` - generates a random integer number between the min and max value. Sending the third argument isFloat as true will return float/decimal number.
 * `apic.randomEmail()` - generates valid random email id.
 * `apic.randomInList(list)` - if you want some random values from a list then you can use this function. This will accept a list of anything and will return one entry from the list randomly. Ex: `apic.randomInList([1, 2, 1.111, 'some text', 'etc..'])`.
+* `apic.time()`  - returns the current timestamp
 
 ### Additional functions
 
