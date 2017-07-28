@@ -14,5 +14,5 @@ Dashboard allows you to do stuff like
 
 ### What's next?
 
-Well APIC allows you to share stuff with your friends/colleague by creating a team. Lets[ create a team and add some members](/dashboard/team-management.md).
+APIC allows you to share stuff with your friends/colleague by creating a team. Lets[ create a team and add some members](/dashboard/team-management.md).
 

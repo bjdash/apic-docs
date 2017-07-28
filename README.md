@@ -18,7 +18,7 @@ APIC provides a powerful platform for testing your APIs. With features like [tes
 
 Dashboard allows you to create/manage teams, publish API documentation with third-party developers etc with a lot of new features soon to be added like saving and sharing reports. [Know more about Dashboard](/dashboard.md).
 
-**NB:** Except for dashboard rest op the modules can be used offline. Also note that Dashboard can only be accessed if the user is registered with APIC and is currently logged in to the instance.
+**NB:** Except for dashboard rest of the modules can be used offline. Also note that Dashboard can only be accessed if the user is registered with APIC and is currently logged in.
 
 ### What's next?
 

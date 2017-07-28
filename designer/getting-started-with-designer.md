@@ -1,6 +1,6 @@
 # Getting Started With APIC designer
 
-Its highly prefered to design your APIs before starting to develope them. With APIC's API designer you can do a lot than just designing API endpoints. To start either you can [import an already exported APIC API project](#import-proj) or [start from scratch](#designscratch).
+Its highly prefered to design your APIs before starting to develope them. With APIC's API designer you can do a lot than just designing API endpoints. To start either you can [import an already exported APIC API projec or Swagger Spec or Open API spec](#import-proj)   or [start from scratch](#designscratch).
 
 ![](/assets/APIC-designer-Home.PNG)
 
@@ -12,7 +12,7 @@ To create a new API project click on the **+ icon** and fill up the required fie
 
 ### Importing existing API projects {#import-proj}
 
-If you already have an exported API project then importing that into your workspace is just a click away. Just click on the Import icon present beside your workspace and browse the exported file. APIC will import the project into your workspace.
+If you already have an exported API project or have an Open API specification \(previously swagger specification\) then importing that into your workspace is just a click away. Just click on the Import icon present beside your workspace and browse the exported file. APIC will import the project into your workspace.
 
 ### What's next?
 
