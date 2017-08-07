@@ -4,7 +4,7 @@ APIC provides a complete end to end solution for APIs; staring from **design** t
 
 ### Designer {#designer}
 
-APIC privides a simplistic yet a powerful platform to design your APIs by defining models, traits and endpoints. It also helps to group them into folders. [Know more about the Designer](/designer.md).
+APIC provides a simplistic yet a powerful platform to design your APIs by defining models, traits and endpoints. It also helps to group them into folders. [Know more about the Designer](/designer.md).
 
 ### Docs {#docs}
 
