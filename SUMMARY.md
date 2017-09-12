@@ -18,7 +18,7 @@
   * [Using Environments](tester/using-environments.md)
   * [Writing Test Cases](tester/writing-test-cases.md)
   * [Apic APIs and Functions](tester/apic-apis-functions.md)
-  * [Response Schema validation](response-schema-validation.md)
+  * [Response Schema validation](tester/response-schema-validation.md)
   * [Creating Test Suits](tester/creating-test-suits.md)
 * [Docs](docs.md)
 * [Dashboard](dashboard.md)
