@@ -20,6 +20,7 @@
   * [Apic APIs and Functions](tester/apic-apis-functions.md)
   * [Response Schema validation](tester/response-schema-validation.md)
   * [Creating Test Suits](tester/creating-test-suits.md)
+  * [Test Websocket](tester/test-websocket.md)
 * [Docs](docs.md)
 * [Dashboard](dashboard.md)
   * [Team Management](dashboard/team-management.md)
