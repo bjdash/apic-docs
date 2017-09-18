@@ -4,12 +4,12 @@ APIC is available as a Chrome packaged App \(Also works with Chrome OS\), web ap
 
 ### APIC Chrome App
 
-You can install APIC from Google Chrome's app store and launch it from Apps panel. To install APIC Chrome app, head over to [Chromes's app store](https://chrome.google.com/webstore/detail/apic/ndlppagggobloiddihlgkhambleecphp), click on the **Add to chrome** button and you are all set to go.
+You can install APIC from Google Chrome's app store and launch it from Apps panel. To install APIC Chrome app, head over to [Chromes's app store](https://chrome.google.com/webstore/detail/apic-complete-api-solutio/ggnhohnkfcpcanfekomdkjffnfcjnjam), click on the **Add to chrome** button and you are all set to go.
 
 ### Installing the Native app
 
-* **Windows - **Want to install APIC as standalone app? Download the exe from [http://myapic.com/release/win64/apic Setup 1.1.2.exe](http://myapic.com/release/win64/apic Setup 1.1.2.exe)
-* **macOS - Coming soon**
+* **Windows - **Want to install APIC as standalone app? Download the exe from [http://www.myapic.com/download/apic Setup 2.0.6.exe](http://www.myapic.com/download/apic%20Setup%202.0.6.exe)
+* **macOS - **Need the native standalone app for your macOS. Download the dmg from [http://localhost/download/apic-2.0.6.dmg](http://www.myapic.com/download/apic-2.0.6.dmg)
 * **Linux - Coming soon**
 
 ### Using the Web App
