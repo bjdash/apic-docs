@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'apic-font';
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/Comfortaa-Regular.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'apic-font';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/Comfortaa-Bold.ttf')  format('truetype');
+}
+
 .apic-doc-body .book-summary ul.summary li a:hover {
     text-decoration: none;
     background: #eee;
@@ -23,4 +36,9 @@
     float: right;
     margin: 10px;
     font-size: 28px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:apic-font;
+    color:#03A9F4;
 }
