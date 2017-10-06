@@ -53,11 +53,11 @@ gulp.task('build:book', function(cb){
       });
 });
 
-gulp.task('build', function(cb){
-    return runSequence('clean','build:book','copyFiles','editHtml','war');
+gulp.task('war', function(cb){
+    return runSequence('clean','build:book','copyFiles','editHtml','dist');
 });
 
-gulp.task('war', function () {
+gulp.task('dist', function () {
 	gulp.src(['./build/**/*.*'])
 	.pipe(war({
 			welcome : 'index.html',
