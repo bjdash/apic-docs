@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "electron.js",
   "scripts": {
+    "start1": "npm install gitbook-cli -g | gulp war",
     "start": "gulp war"
   },
   "devDependencies": {
