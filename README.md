@@ -22,7 +22,7 @@ Dashboard allows you to create/manage teams, publish API documentation with thir
 
 ### API Simulator
 
-APIC's API simulator allows you to simulate your API responses based on the API design you have defined. You can simulate response for any status type you wish for; for example 200 \(ok\), 404 \(Not found\) or 500 \(Internal server error\). Know more about the API Simulator here.
+APIC's API simulator allows you to simulate your API responses based on the API design you have defined. You can simulate response for any status type you wish for; for example 200 \(ok\), 404 \(Not found\) or 500 \(Internal server error\). [Know more about the API Simulator here](/simulator.md).
 
 ### What's next?
 
