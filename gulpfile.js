@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     textTransformation = require('gulp-text-simple'),
     exec = require('child_process').exec,
     clean = require('gulp-rimraf'),
+    gitbook = require('gitbook-cli'),
     runSequence = require('run-sequence');
 
 var transformString = function (s) {
