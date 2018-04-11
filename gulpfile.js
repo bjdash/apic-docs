@@ -17,6 +17,10 @@ var transformString = function (s) {
         s = s.replace('<link rel="stylesheet" href="../gitbook/style.css">', '<link rel="stylesheet" href="../gitbook/style.css"><link rel="stylesheet" href="../assets/apic-doc-style.css">');
         s = s.replace('<div class="book-summary">', '<div class="book-summary"><div><img src="../assets/apic-docs-logo.png" style="width: 145px;"/></div>');
     }
+	
+	if(s.indexOf('gitbook/images/favicon.ico')>0){
+		s = s.replace('gitbook/images/favicon.ico', 'favicon.ico')
+	}
     
     s = s.replace('GitBook</title>', 'APIC Docs</title>');
     s = s.replace('<body>', '<body class="apic-doc-body">');

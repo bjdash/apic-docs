@@ -12,6 +12,7 @@ _book
 apic-doc-build
 build
 dist
+war
 
 # eBook build output
 *.epub
