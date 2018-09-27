@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 var transformString = function (s) {
     if(s.indexOf('<link rel="stylesheet" href="gitbook/style.css">')>0){
         s = s.replace('<link rel="stylesheet" href="gitbook/style.css">', '<link rel="stylesheet" href="gitbook/style.css"><link rel="stylesheet" href="assets/apic-doc-style.css">');
-        s = s.replace('<div class="book-summary">', '<div class="book-summary"><div><img src="assets/apic-docs-logo.png" style="width: 145px;"/><a class="home-icon" href="http://myapic.com" target="_new"><span class="fa fa-home"></span></a></div>');
+        s = s.replace('<div class="book-summary">', '<div class="book-summary"><div><img src="assets/apic-docs-logo.png" style="width: 145px;"/><a class="home-icon" href="https://apic.app" target="_new"><span class="fa fa-home"></span></a></div>');
     }
     if(s.indexOf('<link rel="stylesheet" href="../gitbook/style.css">')>0){
         s = s.replace('<link rel="stylesheet" href="../gitbook/style.css">', '<link rel="stylesheet" href="../gitbook/style.css"><link rel="stylesheet" href="../assets/apic-doc-style.css">');
@@ -19,8 +19,8 @@ var transformString = function (s) {
     
     s = s.replace('GitBook</title>', 'APIC Docs</title>');
     s = s.replace('<body>', '<body class="apic-doc-body">');
-    s = s.replace('href="https://www.gitbook.com"', 'href="http://myapic.com"');
-    s = s.replace('Published with GitBook', '&copy; myapic');
+    s = s.replace('href="https://www.gitbook.com"', 'href="https://apic.app"');
+    s = s.replace('Published with GitBook', '&copy; apic.app');
     return s;
 };
  
