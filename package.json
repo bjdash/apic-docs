@@ -2,8 +2,13 @@
   "name": "apic-docs",
   "version": "0.1.0",
   "main": "electron.js",
+  "scripts": {
+    "start1": "npm install gitbook-cli -g | gulp war",
+    "start": "gulp war"
+  },
   "devDependencies": {
     "fs": "0.0.2",
+    "gitbook-cli": "^2.3.2",
     "gulp": "^3.9.1",
     "gulp-rimraf": "^0.2.1",
     "gulp-text-simple": "^0.4.0",
