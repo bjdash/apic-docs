@@ -16,6 +16,7 @@
   * [Viewing API Response](tester/decoding-the-response.md)
   * [Managing Environments](tester/managing-environments.md)
   * [Using Environments](tester/using-environments.md)
+  * [Using the Test Builder](tester/using-test-builder.md)
   * [Writing Test Cases](tester/writing-test-cases.md)
   * [Apic APIs and Functions](tester/apic-apis-functions.md)
   * [Response Schema validation](tester/response-schema-validation.md)
