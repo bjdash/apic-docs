@@ -10,7 +10,9 @@ If a response is returned by the server then you can see under the **Body** tab 
 2. **Raw - **Shows the response as it is received from the server
 3. **Preview - **If the returned response has html content or is a image/audio/video the you can preview it under this tab
 
-   ![](/assets/apic-response.JPG)
+4. **Test Builder**: Provides an feature rich UI to build Tests based on your response
+
+   ![](/assets/apic-test-builder-x.png)
 
 ### Headers
 
