@@ -8,15 +8,13 @@ You can install APIC from Google Chrome's app store and launch it from Apps pane
 
 ### Installing the Native app
 
-* **Windows - **Want to install APIC as standalone app? Download the exe from [https://apic.app/download/apic Setup 2.1.0.exe](https://apic.app/download/apic Setup 2.1.0.exe)
-* **macOS - **Need the native standalone app for your macOS. Download the dmg from [https://apic.app/download/apic-2.1.0.dmg](https://apic.app/download/apic-2.1.0.dmg)
-* **Linux - Coming soon**
+APIC also comes as native apps for windows \(.exe\), mac \(.dmg\) and a linux version coming very soon. You can download the native version [here](https://apic.app/#Download).
 
 ### Using the Web App
 
 You can use APIC directly from your browser by visiting [https://apic.app/app](https://apic.app/app).
 
-**Warning**: The web version of APIC \(API testing module\) suffers with the limitation of CORS where browsers don't allow access to resources of other domains unless the response contains **Access-Control-Allow-Origin **header with a value of "**\***" or "**https://apic.app**" \(without the quotes\). To overcome this issue you need to install a plugin that will allow APIC to access resources on other domains by adding **Access-Control-Allow-Origin: \* **header. You can download the helper plugin for chrome from [https://chrome.google.com/webstore/detail/apic-extension/dejjobgejdajdjjhjcindbjcfohoiehn](https://chrome.google.com/webstore/detail/apic-extension/dejjobgejdajdjjhjcindbjcfohoiehn?hl=en)
+**Warning**: The web version of APIC \(API testing module\) suffers with the limitation of CORS where browsers don't allow access to resources of other domains unless the response contains **Access-Control-Allow-Origin **header with a value of "**\***" or "[https://apic.app](https://apic.app)" \(without the quotes\). To overcome this issue you need to install a plugin that will allow APIC to access resources on other domains by adding **Access-Control-Allow-Origin: \* **header. You can download the helper plugin for chrome from [https://chrome.google.com/webstore/detail/apic-extension/dejjobgejdajdjjhjcindbjcfohoiehn](https://chrome.google.com/webstore/detail/apic-extension/dejjobgejdajdjjhjcindbjcfohoiehn?hl=en)
 
 For Firefox/IE/Safari you can install equivalent plugins that allows modifying **Access-Control-Allow-Origin **header.
 
