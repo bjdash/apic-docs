@@ -50,7 +50,7 @@ You can access the details of the request that was sent by using the `$request` 
 You can use `validateSchema()` in yout test scripts to validate if the response is adhering to the specified schema or not. [Know more about apic schema validation at https://apic.app/docs/tester/response-schema-validation.html](https://apic.app/docs/tester/response-schema-validation.html)
 
 Examples:
-```JS
+```js
 apic.test("The created ToDo name should match to the one sent in request.", function(){
 	expect($response.data.name).to.be.eql($request.body.name);
 });

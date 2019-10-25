@@ -26,24 +26,26 @@ You can add test cases to your API before running it under the **Scripts** tab b
 Ex:
 
 ```js
-assertTrue("Status Code is 201",$response.status===201);
-assertTrue("Status text is Created",$response.statusText=="Created");
-assertTrue("time taken is less than 2 sec",$response.timeTaken<=2000);
-assertTrue("Response body has the string \'created\'",$response.body.has("created"));
-assertTrue("Response has the header Content-Type",$response.headers.has("Content-Type"));
-assertTrue("Response header Content-Type is application/json; charset=utf-8",$response.headers.getValue("content-Type")==="application/json");
+apic.test("Check that Status code is 201 (Created)", function(){
+	expect($response.status).to.be.eql(201);
+});
+apic.test("Status Text is Created", function(){
+	expect($response.statusText).to.be.eql("Created");
+});
+apic.test("Time taken is less than or equals to 2 sec", function(){
+	expect($response.timeTaken).to.be.lte(2000);
+})
+apic.test("Response raw body contains string 'your_string'", function(){
+	expect($response.body).to.include("your_string");
+});
+apic.test("The value of response header Content-Type is application/json", function(){
+	expect($response.headers.getValue("content-Type")).to.be.eql("application/json");
+});
 ```
 
 The same code above can also be written as:
 
-```js
-TESTS["Status Code is 201"] = $response.status===201);
-TESTS["Status text is Created"] = $response.statusText=="Created");
-TESTS["time taken is less than 2 sec"] = $response.timeTaken<=2000);
-TESTS["Response body has the string \'created\'"] = $response.body.has("created"));
-TESTS["Response has the header Content-Type"] = $response.headers.has("Content-Type"));
-TESTS["Response header Content-Type is application/json; charset=utf-8"] = $response.headers.getValue("content-Type")==="application/json");
-```
+
 
 ![](/assets/apic-test-result.JPG)
 
@@ -76,7 +78,7 @@ log($response.data.errCode);
 
 ![](/assets/apic-resp-logs.JPG)
 
-### Next: [managing Environments](/tester/managing-environments.md)
+### Next: [Managing Environments](/tester/managing-environments.md)
 
 
 

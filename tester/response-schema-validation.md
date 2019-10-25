@@ -5,7 +5,9 @@ APIC allows you to validate your response with a specific JSON schema. You can d
 Now to validate your response with the schema just add below line in your PostRun scripts.
 
 ```js
-TESTS["Response data should match the specified schema based on status code"] = validateSchema();
+apic.test("Response data should match the specified schema for current status code", function(){
+	expect(validateSchema()).to.be.eql(true);
+})
 ```
 
 The `validateSchema()` method will detect the http status code and will validate with the JSON schema defined for that specific code. For example if the status code is 401 then it will validate the response with the JSON schema defined against 401.
@@ -13,7 +15,9 @@ The `validateSchema()` method will detect the http status code and will validate
 But if you believe that the response should have been 200 instead of 401 and want to force the validation against the schema defined for 200 then you can do that by passing the status code to the `validateSchema(200)` function.
 
 ```js
-TESTS["Response data should match the schema specified against status 200"] = validateSchema(200);
+apic.test("Response data should match the schema specified against status 200", function(){
+	expect(validateSchema(200)).to.be.eql(true);
+})
 ```
 
 **Schema validation Example:**
