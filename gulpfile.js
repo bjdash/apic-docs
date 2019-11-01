@@ -51,11 +51,15 @@ gulp.task('clean', [], function () {
 });
 
 gulp.task('build:book', function(cb){
-    exec('gitbook build', function (err, stdout, stderr) {
+    exec('node_modules\\.bin\\gitbook build', function (err, stdout, stderr) {
         console.log(stdout);
         console.log(stderr);
         cb(err);
       });
+});
+
+gulp.task('build', function(cb){
+    return runSequence('clean','build:book','copyFiles','editHtml');
 });
 
 gulp.task('war', function(cb){
