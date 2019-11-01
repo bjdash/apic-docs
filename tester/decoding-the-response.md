@@ -9,7 +9,7 @@ If a response is returned by the server then you can see under the **Body** tab 
 1. **Pretty -** Formats and beautifies the response to make it more user readable.
 2. **Raw - **Shows the response as it is received from the server
 3. **Preview - **If the returned response has html content or is a image/audio/video the you can preview it under this tab
-4. **Test Builder**: Provides an feature rich UI to build Tests based on your response
+4. [**Test Builder**:](/tester/using-test-builder.md) Provides an feature rich UI to build Tests based on your response
 
    ![](/assets/apic-test-builder-x.png)
 
@@ -21,31 +21,29 @@ You can see the headers returned by the server under **Headers** tab.
 
 ### Test Cases
 
-You can add test cases to your API before running it under the **Scripts** tab before making a request. Once a response is received your test cases will be executed and results will be shown in the **Test Cases** tab in the Response panel. By default it will show all test results. To see only Passed or Failed results you can use the filter beside the results. Learn how to add Test Cases and perform end to end testing of your APIs here.
+You can add test cases to your API before running it under the **Scripts** tab before making a request. Once a response is received your test cases will be executed and results will be shown in the **Test Cases** tab in the Response panel. By default it will show all test results. To see only Passed or Failed results you can use the filter beside the results. Learn [how to add Test Cases](/tester/writing-test-cases.md) and [perform end to end testing of your APIs](/tester/creating-test-suits.md).
 
 Ex:
 
 ```js
 apic.test("Check that Status code is 201 (Created)", function(){
-	expect($response.status).to.be.eql(201);
+    expect($response.status).to.be.eql(201);
 });
 apic.test("Status Text is Created", function(){
-	expect($response.statusText).to.be.eql("Created");
+    expect($response.statusText).to.be.eql("Created");
 });
 apic.test("Time taken is less than or equals to 2 sec", function(){
-	expect($response.timeTaken).to.be.lte(2000);
+    expect($response.timeTaken).to.be.lte(2000);
 })
 apic.test("Response raw body contains string 'your_string'", function(){
-	expect($response.body).to.include("your_string");
+    expect($response.body).to.include("your_string");
 });
 apic.test("The value of response header Content-Type is application/json", function(){
-	expect($response.headers.getValue("content-Type")).to.be.eql("application/json");
+    expect($response.headers.getValue("content-Type")).to.be.eql("application/json");
 });
 ```
 
 The same code above can also be written as:
-
-
 
 ![](/assets/apic-test-result.JPG)
 
