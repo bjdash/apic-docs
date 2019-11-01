@@ -2,13 +2,20 @@
     font-family: 'apic-font';
     font-style: normal;
     font-weight: 500;
-    src: url('fonts/Comfortaa-Regular.ttf')  format('truetype');
+    src: url('Comfortaa-Regular.ttf')  format('truetype');
 }
 @font-face {
     font-family: 'apic-font';
     font-style: normal;
     font-weight: 700;
-    src: url('fonts/Comfortaa-Bold.ttf')  format('truetype');
+    src: url('Comfortaa-Bold.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('Poppins-Regular.woff2')  format('woff2');
 }
 
 .apic-doc-body .book-summary ul.summary li a:hover {
@@ -36,6 +43,10 @@
     float: right;
     margin: 10px;
     font-size: 28px;
+}
+
+body, .book.font-family-1 {
+    font-family: "Poppins", Helvetica, Arial, sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6{
