@@ -1,6 +1,6 @@
 # Installing APIC
 
-APIC is available as a Chrome packaged App \(Also works with Chrome OS\), web app \(to be used in a browser\), Native app for Windows, Mac \(coming soon\) and Linux \(Coming Soon\). You can select any option that suits your need.
+APIC is available as a Chrome packaged App \(Also works with Chrome OS\), web app \(to be used in a browser\), Native app for Windows, Mac \(coming soon\) and Linux \(Coming Soon\). You can select any option that suites your need.
 
 ### APIC Chrome App
 

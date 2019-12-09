@@ -19,7 +19,7 @@
   * [Using the Test Builder](tester/using-test-builder.md)
   * [Writing Test Cases](tester/writing-test-cases.md)
   * [Response Schema validation](tester/response-schema-validation.md)
-  * [Creating Test Suits](tester/creating-test-suits.md)
+  * [Creating Test Suites](tester/creating-test-suits.md)
   * [Test Websocket](tester/test-websocket.md)
 * [Docs](docs.md)
 * [Simulator](simulator.md)
@@ -28,3 +28,4 @@
   * [Published Docs](dashboard/published-docs.md)
 * [Sharing](sharing.md)
 * [Settings](settings.md)
+
