@@ -1,6 +1,6 @@
 # Team Management
 
-APIC allows seamless sharing of API projects, Requests, TestSuits etc with others by creating teams. Once Dashboard is opened click on the Teams option in the left menu to access you Team management console.
+APIC allows seamless sharing of API projects, Requests, TestSuites etc with others by creating teams. Once Dashboard is opened click on the Teams option in the left menu to access you Team management console.
 
 You can see your existing teams here as well as the list of teams you are a member of.
 
@@ -22,7 +22,7 @@ You can remove a team member by clicking on the thrash icon beside the member in
 
 ### Deleting a team
 
-You can delete a team by clicking on the thrash icon beside the team in the list of teams shown above. Once you delete a team all the stuff \(APIProjects, Requests, Test Suits etc\) you have shared with the members will be removed from their APIC's environment.
+You can delete a team by clicking on the thrash icon beside the team in the list of teams shown above. Once you delete a team all the stuff \(APIProjects, Requests, Test Suites etc\) you have shared with the members will be removed from their APIC's environment.
 
 ### Existing a team
 
@@ -30,7 +30,5 @@ If you don't want to be a member of a team any more then you can leave the team 
 
 ### What's next?
 
-Do you know you can generate beautiful functional documentation for your API project with APIC and also share it with third-party developers. APIC's **`Published Docs`** allow you to publish the documentation online for other third-party developers whome you want to get on board for using your PAIs.
-
-
+Do you know you can generate beautiful functional documentation for your API project with APIC and also share it with third-party developers. APIC's `Published Docs` allow you to publish the documentation online for other third-party developers whome you want to get on board for using your PAIs.
 
