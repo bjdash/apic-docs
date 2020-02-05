@@ -1,4 +1,4 @@
-# APIC Command line interface [\(apic-cli\)](https://github.com/apic-apps/apic-cli)
+# APIC Command line interface \(apic-cli\)
 
 `apic-cli` is the command line utility to run you APIs tests with apic. apic-cli allows you to test your Test Suits created with apic from a command line or with a nodejs app.
 
@@ -8,9 +8,8 @@
 
 if you want to use apic from the command line run
 
-```
+```text
 npm install apic-cli -g
-
 ```
 
 Once installed you can run`apic-cli -h`to view all available commands.
@@ -25,6 +24,8 @@ Once installed you can run`apic-cli -h`to view all available commands.
 
 `-r, --reporters <reporters>`: Comma separated list of reporters to use \(without any space\)
 
+`--reporters-junit-path <path>`: Path to write the junit report file
+
 `-d , --responseData`: if specified, response data will be logged in the cli reporter
 
 `-h, --help`: output usage information
@@ -35,14 +36,13 @@ Example:`apic-cli run ".\example\ToDo demo.suit.apic" -e ".\example\APIC Todo de
 
 If you want to use it with a node js application add it to your project by running
 
-```
+```text
 npm install apic-cli --save
-
 ```
 
 Next add below code to your script file.
 
-```
+```text
 const apicCli = require('../lib');
 
 apicCli.run('.\\example\\ToDo demo.suit.apic', {
@@ -50,7 +50,6 @@ apicCli.run('.\\example\\ToDo demo.suit.apic', {
     reporters: 'cli,junit',
     responseData: true
 });
-
 ```
 
 Look in the [examples folder](https://github.com/apic-apps/apic-cli) for a sample node js app to run your Test Suit with apic.

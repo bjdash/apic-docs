@@ -1,4 +1,4 @@
-# Summary
+# Table of contents
 
 * [About APIC](README.md)
 * [Installing APIC](installing-apic.md)
@@ -29,5 +29,5 @@
   * [Team Management](dashboard/team-management.md)
   * [Published Docs](dashboard/published-docs.md)
 * [Sharing](sharing.md)
-* APIC Command line interface \(apic-cli\)
+* [APIC Command line interface \(apic-cli\)](apic-command-line-interface-apic-cli-1.md)
 
