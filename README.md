@@ -12,7 +12,7 @@ APIC can convert your APIs designs into beautiful functional documentations that
 
 ### Tester {#tester}
 
-APIC provides a powerful platform for testing your APIs. With features like [test suites](/tester/creating-test-suits.md),[multiple environments](/tester/using-environments.md), [schema validations](/response-schema-validation.md), [random data generation](/tester/writing-test-cases.md); you can perform an end to end testing of your APIs. [Know more about Tester](/tester.md).
+APIC provides a powerful platform for testing your APIs. With features like [test suites](/tester/creating-test-suits.md),[multiple environments](/tester/using-environments.md), [schema validations](/tester/response-schema-validation.md), [random data generation](/tester/writing-test-cases.md); you can perform an end to end testing of your APIs. [Know more about Tester](/tester.md).
 
 ### Dashboard
 
