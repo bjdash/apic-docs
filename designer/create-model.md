@@ -4,13 +4,13 @@ Have a schema that you want to reuse in multiple places? Create a Model. Models 
 
 You can create a Model by clicking on the Models option in your Project Home page which will open a view as shown below to fill in the details and create your Model.
 
-![](/assets/APIC-create-model.PNG)
+![](../.gitbook/assets/apic-create-model.PNG)
 
-### Example
+## Example
 
 Lets create a ToDo modes with the **schema** shown above and we will put it under **Models** folder.
 
-### What's next?
+## What's next?
 
-Next we will [create some generic response patterns or traits](/designer/create-trait.md).
+Next we will [create some generic response patterns or traits](create-trait.md).
 

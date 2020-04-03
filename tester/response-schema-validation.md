@@ -4,9 +4,9 @@ APIC allows you to validate your response with a specific JSON schema. You can d
 
 Now to validate your response with the schema just add below line in your PostRun scripts.
 
-```js
+```javascript
 apic.test("Response data should match the specified schema for current status code", function(){
-	expect(validateSchema()).to.be.eql(true);
+    expect(validateSchema()).to.be.eql(true);
 })
 ```
 
@@ -14,9 +14,9 @@ The `validateSchema()` method will detect the http status code and will validate
 
 But if you believe that the response should have been 200 instead of 401 and want to force the validation against the schema defined for 200 then you can do that by passing the status code to the `validateSchema(200)` function.
 
-```js
+```javascript
 apic.test("Response data should match the schema specified against status 200", function(){
-	expect(validateSchema(200)).to.be.eql(true);
+    expect(validateSchema(200)).to.be.eql(true);
 })
 ```
 
@@ -29,7 +29,7 @@ Consider you are using an PAI to get the list of users and we will take below 2 
 
 Now lets say for 200, the response should have a property called usersList which is an array of user object and a user object will have a name \(String, 0-255 characters\), email\( String&lt;email&gt;, 0-255 characters\), country \(String, an enumerated value from a list of countries\).
 
-```js
+```javascript
 {
     "userList":[
         {
@@ -43,18 +43,16 @@ Now lets say for 200, the response should have a property called usersList which
 
 The schema model for above response type should look something similar to this
 
-![](/assets/apic-resp-schema-validation-1.JPG)
-
-
+![](../.gitbook/assets/apic-resp-schema-validation-1%20%281%29.JPG)
 
 For 401 we can return a message \(String\) and an statusCode \(String \["ERROR","WARNING", "OK"\]\)
 
-```js
+```javascript
 {
     "message": "You are not authorized to access the resource",
     "statusCode": "ERROR"
 }
 ```
 
-The schema design for the above should look something like this![](/assets/apic-resp-schema-validation-401.JPG)
+The schema design for the above should look something like this![](../.gitbook/assets/apic-resp-schema-validation-401.JPG)
 

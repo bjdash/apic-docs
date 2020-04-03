@@ -4,13 +4,13 @@ You can create a folder by clicking on the Folders option in your Project Home p
 
 To edit a folders select it from the left menu or from the dropdown at the top as shown below.
 
-![](/assets/APIC-create-folder.PNG)
+![](../.gitbook/assets/apic-create-folder%20%281%29.PNG)
 
-### Example
+## Example
 
 For our ToDo application we will create 3 folders, one for models \(**Models**\), one for traits \(**Traits**\) and one for endpoints \(**Endpoints**\).
 
-### What's next?
+## What's next?
 
-Next we will [create our ToDo model](/designer/create-model.md).
+Next we will [create our ToDo model](create-model.md).
 

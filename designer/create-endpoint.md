@@ -8,47 +8,32 @@ You can import headers or query parameters or response code and their schema fro
 
 You can add a path parameter by putting that in the URL as /api/path/{para-param}. Now yo can specify the details of this path param under the path params section.
 
-![](/assets/APIC-create-endpoint.PNG)
+![](../.gitbook/assets/apic-create-endpoint.PNG)
 
-### Endpoint fields
+## Endpoint fields
 
 * Name/Summary
-
 * Path
-
 * HTTP method
-
 * Folder
-
 * Operation Id
-
 * Consumes/produces: Eg: appication/json
-
 * Schemes
-
 * traits
-
 * tags
-
 * Description
-
 * Path parameters
-
 * Query parameters
-
 * Headers
-
 * Body
-
 * Responses
-
 * Pre/Post script
 
-### Example
+## Example
 
 Lets create 3 endpoints for our ToDo applicaion for creating ToDo, getting list of ToDo and getting detail of specific ToDo by its id. We can use path params for getting the ToDo detail by id. Our endpoint URL will look like /todo/{todoid}
 
-### What's next?
+## What's next?
 
-Well we have a basic design ready. Let's see how we can [generate beautiful documentation](/designer/export-docs.md) from this and [share](/designer/export-docs.md) with other developers.
+Well we have a basic design ready. Let's see how we can [generate beautiful documentation](export-docs.md) from this and [share](export-docs.md) with other developers.
 

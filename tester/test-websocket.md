@@ -1,10 +1,10 @@
-# Test Websockets
+# Test Websocket
 
 APIC allows you to test Websockets \(Native Websocket & Stomp\) my connecting to a websocket enabled URL and subscribing to an exchange. Any data you receive will be shown in the Messages section. You can also send data to any exchange as well.
 
 To test websocket requests open an Websocket tab in the Tester module by clicking on the **ws** button as shown below
 
-![](/assets/apic-test-websocket.JPG)
+![](../.gitbook/assets/apic-test-websocket%20%281%29.JPG)
 
 ## Testing Stomp over Websocket
 
@@ -18,11 +18,11 @@ With APIC you can test STOMP enabled websockets. To start
 * Specify additional header you want to send
 * Click Connect and you are done
 
-Now you can see all incoming messages  to the subscribed URL. 
+Now you can see all incoming messages to the subscribed URL.
 
 To data/messages to ant exchange, click on the **Send** button in the **Messages panel**, specify the **Destination exchange** and message to be sent and click **Send**.
 
-## ![](/assets/apic-websocket-test-stomp.png)
+## ![](../.gitbook/assets/apic-websocket-test-stomp.png)
 
 ## Test Websockets
 

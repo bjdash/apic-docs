@@ -5,9 +5,9 @@ Once you have created your environment and defined environment variables, you ca
 To use an environment variable put it in a double pair of curly braces `{{variable_name}}`. Now based on the environment you select, while running your request the variable will be replaced with its defined value.
 
 You can you environment variables in **URLs**, **Query parameters** \(both key and value\), **Headers** \(both key and value\) and in **Body**. In all the above places you will use `{{variable_name}}` to use a variable.  
- you can use variables while sending \(JSON\) data also.
+you can use variables while sending \(JSON\) data also.
 
-```js
+```javascript
 {
     "name":"{{name}}",
     "id":"{{id}}",
@@ -26,5 +26,5 @@ You can also use environment variables in scripts. Use below functions to manipu
 * getEnv\('variable\_name'\) - to get the value of a variable in an environment
 * removeEnv\('variable\_name'\) - ro remove an environment variable.
 
-Learn more about [using environment variables along with scripts here](/tester/writing-test-cases.md).
+Learn more about [using environment variables along with scripts here](writing-test-cases.md).
 
