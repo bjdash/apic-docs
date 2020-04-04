@@ -1,10 +1,26 @@
 # APIC Command line interface \(apic-cli\)
 
-`apic-cli` is the command line utility to run you APIs tests with apic. apic-cli allows you to test your Test Suits created with apic from a command line or with a nodejs app.
+[apic-cli](https://www.npmjs.com/package/apic-cli) is a command line utility that allows you to test your Test Suits created with apic from a command line or with a node js app. With the help of apic-cli you can run your API test suites from inside your Continuous Integration / Continuous Deployment \(CI/CD\) environments.
 
 ## How to use apic-cli
 
-### In terminal
+### Step 1: Install NodeJs
+
+apic-cli is an npm package hence you will need to have NodeJs installed to test your APIs with APIC. Follow the [steps specified here](https://nodejs.org/en/download/package-manager/) to install the version of NodeJs  applicable for your environment.
+
+### Step 2: Install apic-cli
+
+Install the apic command line utility apic-cli globally with the following command.
+
+```text
+npm i apic-cli -g
+or 
+yarn global add apic-cli
+```
+
+### Step 3: Run your Test Suite with apic-cli
+
+#### In terminal
 
 if you want to use apic from the command line run
 
@@ -30,9 +46,13 @@ Once installed you can run`apic-cli -h`to view all available commands.
 
 `-h, --help`: output usage information
 
-Example:`apic-cli run ".\example\ToDo demo.suit.apic" -e ".\example\APIC Todo demo-env.env.apic" -r cli,junit -d`
+Example:
 
-### With node js
+```javascript
+apic-cli run ".\example\ToDo demo.suit.apic" -e ".\example\APIC Todo demo-env.env.apic" -r cli,junit -d
+```
+
+#### With NodeJs
 
 If you want to use it with a node js application add it to your project by running
 
@@ -42,7 +62,7 @@ npm install apic-cli --save
 
 Next add below code to your script file.
 
-```text
+```javascript
 const apicCli = require('../lib');
 
 apicCli.run('.\\example\\ToDo demo.suit.apic', {
