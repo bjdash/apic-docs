@@ -6,15 +6,15 @@ We understand how difficult it gets to automate API testing. With a little help 
 
 [apic-cli](https://www.npmjs.com/package/apic-cli) is a command line utility that allows you to test your Test Suits created with apic from a command line or with a node js app. With the help of apic-cli you can run your API test suites from inside your Continuous Integration / Continuous Deployment \(CI/CD\) environments.
 
-### apic-cli integration with Jenkins
+## apic-cli integration with Jenkins
 
-#### 1. Installation
+### 1. Installation
 
 [Follow the Steps here](https://jenkins.io/doc/book/installing/) to install Jenkins.
 
 [Follow the steps specified here](apic-command-line-interface-apic-cli.md) to install apic-cli
 
-#### 2. Getting your API Test Suite Ready
+### 2. Getting your API Test Suite Ready
 
 Now make sure you have [created a Test Suite](tester/creating-test-suits.md) created for your APIs and have added test cases to each API requests either [using the Test Builder](tester/using-test-builder.md) or by [writing the test cases](tester/writing-test-cases.md) yourself using Chai.js
 
@@ -24,7 +24,7 @@ Run the Test Suite within APIC to make sure all the test cases are passing.
 
 ![](.gitbook/assets/api-suite-full.PNG)
 
-#### 3. Export your Test Suite
+### 3. Export your Test Suite
 
 You can run your Test Suite either by enabling access via URL or by exporting it as a file. To enable access via URL open the Suite and click **Get web access URL**. This will generate an unique URL to access your Test Suite via http. 
 
@@ -34,7 +34,7 @@ You can export your Test Suite by selecting the **Export Suite** option from the
 
 ![](.gitbook/assets/image.png)
 
-#### 4. Running your API Test Suite with apic-cli
+### 4. Running your API Test Suite with apic-cli
 
 You can run your exported test Suite with apic-cli as `apic-cli run|r <pathTo/suit> -e <pathTo/environment>`
 
@@ -60,7 +60,7 @@ For more option on running a Test Suite [refer the section here](apic-command-li
 
 ![](.gitbook/assets/cli-run-cmd.jpg)
 
-#### 5. Integrating with Jenkins
+### 5. Integrating with Jenkins
 
 Open Jenkins on `localhost:8080` and select **New Item** from the left side menu. On the next screen enter a name for your job and select **Freestyle Project**.
 
