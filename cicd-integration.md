@@ -18,7 +18,7 @@ We understand how difficult it gets to automate API testing. With a little help 
 
 Now make sure you have [created a Test Suite](tester/creating-test-suits.md) created for your APIs and have added test cases to each API requests either [using the Test Builder](tester/using-test-builder.md) or by [writing the test cases](tester/writing-test-cases.md) yourself using Chai.js
 
-For now lets use the example test suite **ToDo Demo** that comes pre-loaded with APIC.
+For now lets use the example test suite **ToDo Demo** that comes pre-loaded with APIC. You can download the sample Test Suite from [https://apic.app/api/webAccess/APICSuite/123456abcdef-testsuite-demo?token=apic-demo-suite](https://apic.app/api/webAccess/APICSuite/123456abcdef-testsuite-demo?token=apic-demo-suite)
 
 Run the Test Suite within APIC to make sure all the test cases are passing.
 
@@ -26,9 +26,11 @@ Run the Test Suite within APIC to make sure all the test cases are passing.
 
 #### 3. Export your Test Suite
 
-You can export your Test Suite by selection the **Export Suite** option from the left menu. If you have used any environment variables in your project then make sure you export the environment too.
+You can run your Test Suite either by enabling access via URL or by exporting it as a file. To enable access via URL open the Suite and click **Get web access URL**. This will generate an unique URL to access your Test Suite via http. 
 
-Alternatively you can export your Test Suite and Environment together in a single file by selecting **Export with Environments** option from the left menu.
+OR
+
+You can export your Test Suite by selecting the **Export Suite** option from the left menu. If you have used any environment variables in your project then make sure you export the environment too.Alternatively you can export your Test Suite and Environment together in a single file by selecting **Export with Environments** option from the left menu.
 
 ![](.gitbook/assets/image.png)
 
@@ -36,13 +38,19 @@ Alternatively you can export your Test Suite and Environment together in a singl
 
 You can run your exported test Suite with apic-cli as `apic-cli run|r <pathTo/suit> -e <pathTo/environment>`
 
-For example if you have exported the apic **ToDO demo** Suite and its environment together the you can run it as 
+Use below command to run the demo API Test Suite that come with APIC.
+
+```javascript
+apic-cli run "https://apic.app/api/webAccess/APICSuite/123456abcdef-testsuite-demo?token=apic-demo-suite" 
+```
+
+If you have exported the apic **ToDO demo** Suite and its environment together the you can run it as 
 
 ```javascript
 apic-cli run ".\example\ToDo demo-with-env.suit.apic" -r cli,junit
 ```
 
-Or if you hae exported them separately into separate files then run it as 
+Or if you have exported the Test Suite and Environment variables separately into separate files then run it as 
 
 ```javascript
 apic-cli run ".\example\ToDo demo.suit.apic" -e ".\example\APIC Todo demo-env.env.apic" -r cli,junit -d
@@ -50,9 +58,33 @@ apic-cli run ".\example\ToDo demo.suit.apic" -e ".\example\APIC Todo demo-env.en
 
 For more option on running a Test Suite [refer the section here](apic-command-line-interface-apic-cli.md).
 
+![](.gitbook/assets/cli-run-cmd.jpg)
+
 #### 5. Integrating with Jenkins
 
-#### 
+Open Jenkins on `localhost:8080` and select **New Item** from the left side menu. On the next screen enter a name for your job and select **Freestyle Project**.
+
+![](.gitbook/assets/jenkins-new.jpg)
+
+![](.gitbook/assets/jenkins-new-job.jpg)
+
+This job should execute the `apic-cli run <suite>` shell command so add a Build Step as **Execute Shell**. If you are on windows then select **Execute Windows batch command**.
+
+![](.gitbook/assets/jenkins-add-step.jpg)
+
+Now enter the [command to run your Test Suite](apic-command-line-interface-apic-cli.md). For example to  run the pre-loaded **ToDo Demo** suite use below command.
+
+```javascript
+apic-cli run "https://apic.app/api/webAccess/APICSuite/123456abcdef-testsuite-demo?token=apic-demo-suite" 
+```
+
+![](.gitbook/assets/image%20%281%29.png)
+
+Click Save and start a manual build bu clicking **Build Now** for the left side-menu. You can view the test result by opening the  **Console Output of** the run. If all your test cases passed then the Jenkins job should succeed.
+
+Note the if you have used the pre-loaded **ToDo Demo** suite then your Jenkins job will fail as the demo suite is **configured to fail intentionally**. You can check why it failed in the **Console Output**.
+
+![](.gitbook/assets/jenkins-console.jpg)
 
 
 
