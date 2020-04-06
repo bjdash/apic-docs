@@ -29,5 +29,4 @@
   * [Team Management](dashboard/team-management.md)
   * [Published Docs](dashboard/published-docs.md)
 * [Sharing](sharing.md)
-* [APIC Command line interface \(apic-cli\)](apic-command-line-interface-apic-cli-1.md)
 

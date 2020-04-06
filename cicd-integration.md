@@ -84,6 +84,8 @@ Click Save and start a manual build bu clicking **Build Now** for the left side-
 
 Note the if you have used the pre-loaded **ToDo Demo** suite then your Jenkins job will fail as the demo suite is **configured to fail intentionally**. You can check why it failed in the **Console Output**.
 
+If you want to view the API response as well in the console then add the flag `-d` or `--responseData`
+
 ![](.gitbook/assets/jenkins-console.jpg)
 
 
