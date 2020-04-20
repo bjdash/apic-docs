@@ -1,6 +1,6 @@
 # Creating an Endpoint
 
-Endpoints are your actual APIs.You can define your API endpoints in your project with request, response types, response schemas etc.
+Endpoints are your actual APIs or **`Paths`** as specified by **Swagger**.You can define your API endpoints in your project with request, response types, response schemas etc.
 
 You can create an API Endpoint by clicking on the Endpoints option in your Project Home page which will open a view as shown below to fill in the details and create your Endpoint. You can specify **http method**, **schemes, endpoint url, content type \(Consumes, Produces\)**, tags, summary, description, multiple response codes and their respective response schema as shown below.
 

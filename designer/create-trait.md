@@ -1,6 +1,8 @@
 # Creating a Trait
 
-Traits will help you to define generic request and response patterns like query parameters, headers, response types \(200, 404\) etc and their respective response schemas. You can reuse them with endpoints.
+Traits will help you to define generic request and response patterns like query parameters, headers, response types \(200, 404\) etc and their respective response schema. You can reuse them with endpoints.
+
+Traits help you define reusable **`responses`** and **`parameters`** as specified by **Swagger**.
 
 You can create a Trait by clicking on the Traits option in your Project Home page which will open a view as shown below to fill in the details and create your Trait. You can specify headers, query params, multiple response codes and their respective response schema as shown below.
 
