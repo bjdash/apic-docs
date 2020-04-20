@@ -10,6 +10,7 @@
   * [Creating a Model](designer/create-model.md)
   * [Creating a Trait](designer/create-trait.md)
   * [Creating an Endpoint](designer/create-endpoint.md)
+  * [API Security Definitions](designer/api-security-definitions.md)
   * [Export and view Docs](designer/export-docs.md)
 * [Tester](tester/README.md)
   * [Make an API call](tester/make-an-api-call.md)

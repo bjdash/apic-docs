@@ -21,6 +21,7 @@ You can add a path parameter by putting that in the URL as /api/path/{para-param
 * Schemes
 * traits
 * tags
+* [Security definitions](api-security-definitions.md)
 * Description
 * Path parameters
 * Query parameters

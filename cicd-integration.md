@@ -32,7 +32,7 @@ OR
 
 You can export your Test Suite by selecting the **Export Suite** option from the left menu. If you have used any environment variables in your project then make sure you export the environment too.Alternatively you can export your Test Suite and Environment together in a single file by selecting **Export with Environments** option from the left menu.
 
-![](.gitbook/assets/image.png)
+![](.gitbook/assets/image%20%281%29.png)
 
 ### 4. Running your API Test Suite with apic-cli
 
@@ -78,7 +78,7 @@ Now enter the [command to run your Test Suite](apic-command-line-interface-apic-
 apic-cli run "https://apic.app/api/webAccess/APICSuite/123456abcdef-testsuite-demo?token=apic-demo-suite" 
 ```
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%283%29.png)
 
 Click Save and start a manual build bu clicking **Build Now** for the left side-menu. You can view the test result by opening the  **Console Output of** the run. If all your test cases passed then the Jenkins job should succeed.
 
