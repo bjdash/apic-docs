@@ -11,6 +11,7 @@ Here's what you can do with the PAIC designer
 * [Creating Models](create-model.md)
 * [Creating Traits](create-trait.md)
 * [Creating Endpoints](create-endpoint.md)
+* [Define Security for your APIs](api-security-definitions.md)
 * [Export your API design](export-docs.md)
 
 ## What's next?
