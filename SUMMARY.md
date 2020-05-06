@@ -25,7 +25,7 @@
   * [Test Websocket](tester/test-websocket.md)
 * [APIC Command line interface \(apic-cli\)](apic-command-line-interface-apic-cli.md)
 * [APIC CI/CD Integration \(with Jenkins\)](cicd-integration.md)
-* [Docs](docs.md)
+* [API Documentation](docs.md)
 * [Simulator](simulator.md)
 * [Dashboard](dashboard/README.md)
   * [Team Management](dashboard/team-management.md)
