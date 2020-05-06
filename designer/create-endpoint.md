@@ -27,8 +27,8 @@ You can add a path parameter by putting that in the URL as /api/path/{para-param
 * Query parameters
 * Headers
 * Body
-* Responses
-* Pre/Post script
+* [Responses](write-api-tests-starting-from-design-phase.md)
+* [Pre/Post script](write-api-tests-starting-from-design-phase.md)
 
 ## Example
 

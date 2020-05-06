@@ -54,5 +54,7 @@ For 401 we can return a message \(String\) and an statusCode \(String \["ERROR",
 }
 ```
 
-The schema design for the above should look something like this![](../.gitbook/assets/apic-resp-schema-validation-401.JPG)
+The schema design for the above should look something like this
+
+![](../.gitbook/assets/apic-resp-schema-validation-401.JPG)
 

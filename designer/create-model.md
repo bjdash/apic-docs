@@ -1,4 +1,4 @@
-# Creating a Model
+# Creating a Model or Definitions
 
 Have a schema that you want to reuse in multiple places? Create a Model. Models represent schema objects that allow the definition of input and output data types. Should be used to reduce duplication. Models can be reused with in another models, in traits or with endpoints. Use $ref to refer an existing model. Models are exactly like **`definitions`** as specified by **Swagger.**
 

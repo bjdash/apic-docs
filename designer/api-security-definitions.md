@@ -4,7 +4,7 @@
 
 You can specify different Security Definitions for your APIs while designing your API in the designer section. This adheres to the **securityDefinitions** property of the Swagger specification. To define the security definitions navigate to your API projects home and open the **Security** section as shown below.
 
-![APIC API Security Definitions](../.gitbook/assets/image%20%282%29.png)
+![APIC API Security Definitions](../.gitbook/assets/image%20%283%29.png)
 
 You can select following type of security definitions as supported by Swagger specifications.
 
