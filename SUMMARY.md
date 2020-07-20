@@ -23,6 +23,7 @@
   * [Response Schema validation](tester/response-schema-validation.md)
   * [Creating Test Suites](tester/creating-test-suits.md)
   * [Test Websocket](tester/test-websocket.md)
+* [Test Real User Sessions](capture-and-test-api-from-real-user-sessions.md)
 * [APIC Command line interface \(apic-cli\)](apic-command-line-interface-apic-cli.md)
 * [APIC CI/CD Integration \(with Jenkins\)](cicd-integration.md)
 * [API Documentation](docs.md)

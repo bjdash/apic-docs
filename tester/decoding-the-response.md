@@ -76,5 +76,15 @@ log($response.data.errCode);
 
 ![](../.gitbook/assets/apic-resp-logs%20%281%29.JPG)
 
+## Testing with Saved API Response
+
+APIC allows you to save your API response along with your API request. 
+
+* To save your current API response, click on the **`Save response`** button in **Response** panel. 
+* To view the saved response for a request click on **`Load saved request`**.
+* One the saved response is loaded you can start adding tests by clicking on the Build API Tests which open  the [Test Builder](using-test-builder.md).
+
+![](../.gitbook/assets/image%20%2812%29.png)
+
 ## Next: [Managing Environments](managing-environments.md)
 
