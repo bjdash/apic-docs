@@ -42,8 +42,8 @@ You can access the details of the request that was sent by using the `$request` 
 * `$request {object}` - The object containing information about the request.
   * `url {string}` - This is the final URL to which the request was sent.
   * `method {string}` - The HTTP method used to send the request.
-  * `header {object}` - An object containing information about the headers that were sent in the request. For exaample if your request have an `authorization` header the you can access the value for that in the test with `$request.headers['authorization']`
-  * `query {object}` - An object containing query parameters sent in the request
+  * `headers {object}` - An object containing information about the headers that were sent in the request. For exaample if your request have an `authorization` header the you can access the value for that in the test with `$request.headers['authorization']`
+  * `queryParams {object}` - An object containing query parameters sent in the request
   * `body {object/string}` - If your request has a payload body then you can acces that by using `$request.body` in your scripts.
     * **JSON body** - If your request payload is a JSON object the apic will automatically convert it to a JSON object and add it to the `$request.body` object
     * **String body** - If your request payload can't be converted to a JSON then `$request.body` will be a string.
