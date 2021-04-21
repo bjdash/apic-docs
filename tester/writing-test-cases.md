@@ -34,6 +34,8 @@ To test the response and its properties, apic creates a response object named `$
   * `status {number}` - The http status code for the response. Ex: 200, 404.
   * `statusText {string}` - The http status text for the response. Ex OK, Not found
   * `timeTaken {number}` - Time taken for the request to complete in milliseconds.
+  * `respSize {string}` - String representation of response size. Eg: `20KB`.
+  * `logs {string[]}` - List of log strings added.
 
 ### The request object \($request\)
 
