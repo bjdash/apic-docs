@@ -40,6 +40,8 @@ To test the response and its properties, apic creates a response object named `$
 You can access the details of the request that was sent by using the `$request` variable in your tests. For example the final request url \(`$request.url`\) or the value of a request body \(`$request.body.todoName`\)
 
 * `$request {object}` - The object containing information about the request.
+  * `_id {string}` - The request id of saved requests.
+  * `name {string}` - Name of the saved request, undefined if request is not saved.
   * `url {string}` - This is the final URL to which the request was sent.
   * `method {string}` - The HTTP method used to send the request.
   * `headers {object}` - An object containing information about the headers that were sent in the request. For exaample if your request have an `authorization` header the you can access the value for that in the test with `$request.headers['authorization']`
@@ -48,6 +50,9 @@ You can access the details of the request that was sent by using the `$request` 
     * **JSON body** - If your request payload is a JSON object the apic will automatically convert it to a JSON object and add it to the `$request.body` object
     * **String body** - If your request payload can't be converted to a JSON then `$request.body` will be a string.
     * **form-data/x-www-form-urlencoded** - If you used form-data/x-www-form-urlencoded to send your payload then they will also be converted to an object and added to body. For example if you send a form data as `name=abcd` then `$request.body` will be an object with value `{name: "abcd"}`
+    * **GraphQL** - TODO:.
+  * `prescript {string}` - Pre-run script.
+  * `postscript {string}` - Post-run script.
 
 ### Response Schema validation
 
