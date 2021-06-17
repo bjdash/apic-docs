@@ -49,6 +49,11 @@ You can access the details of the request that was sent by using the `$request` 
     * **String body** - If your request payload can't be converted to a JSON then `$request.body` will be a string.
     * **form-data/x-www-form-urlencoded** - If you used form-data/x-www-form-urlencoded to send your payload then they will also be converted to an object and added to body. For example if you send a form data as `name=abcd` then `$request.body` will be an object with value `{name: "abcd"}`
 
+{% hint style="info" %}
+Note that APIC converts all headers to lower case before sending it and hence should be accessed with their lower case string from $request.headers.  
+Eg: Even if you added a header names **`Test`** while accessing it in the $request object you should be using **`test`**like `$request.headers['test']`
+{% endhint %}
+
 ### Response Schema validation
 
 You can use `validateSchema()` in yout test scripts to validate if the response is adhering to the specified schema or not. [Know more about apic schema validation at https://apic.app/docs/tester/response-schema-validation.html](https://apic.app/docs/tester/response-schema-validation.html)
