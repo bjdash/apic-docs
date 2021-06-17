@@ -6,7 +6,7 @@ Traits will help you to define generic request and response patterns like query 
 
 You can create a Trait by clicking on the Traits option in your Project Home page which will open a view as shown below to fill in the details and create your Trait. You can specify headers, query params, multiple response codes and their respective response schema as shown below.
 
-![](../.gitbook/assets/apic-create-trait%20%281%29.PNG)
+![](../.gitbook/assets/APIC-create-trait%20%281%29.PNG)
 
 ## Example
 

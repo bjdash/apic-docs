@@ -4,7 +4,7 @@ APIC's API simulator allows you to simulate your API responses based on the API 
 
 You can enable simulation for an API design project from the **Designer** section. To enable simulation for a project go to [Designer Module](designer/), open the required API project by clicking on it and scroll down to the **Mocked Response** section at the bottom of the page. Click on the Enable Mocked Response button to enable API simulation for the selected project.
 
-![](.gitbook/assets/apic-enable-simulator%20%281%29.PNG)
+![](.gitbook/assets/APIC-enable-simulator%20%281%29.PNG)
 
 Once the API simulation is enabled you will get a simulation key \(simKey\) which you can use to simulate you API. You can mock your API endpoint at `http://myapic.com/mock/{simkey}/{api-endpoint}?statusCode={statuscode}`, where
 

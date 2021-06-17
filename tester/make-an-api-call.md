@@ -76,7 +76,7 @@ To send random data each time you fire the request, you can use [APIC's random d
 
 For example for generating random email use `apic.randomEmail()` with a pair of curly braces.
 
-![](../.gitbook/assets/apic-random-data%20%281%29.JPG)
+![](../.gitbook/assets/apic-random-data%20%281%29%20%281%29.JPG)
 
 ### **Environment**
 

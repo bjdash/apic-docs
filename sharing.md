@@ -4,7 +4,7 @@ APIC's sharing feature allows yuo to share your API Project design, Requests & f
 
 The `Share` option is available with each API Design Project, Saved request folders, Test Case projects. On clicking Share a popup will appear to select the team you want to share with. If you don't have a team then go to [Dashboard ](dashboard/)and [create one](dashboard/team-management.md). Select the Team you want to share with and you are done. Your shared object will now appear in the APIC instance of each members of the shared team.
 
-![](.gitbook/assets/team-selector%20%281%29.jpg)
+![](.gitbook/assets/Team-selector%20%281%29.jpg)
 
 ## Sharing an API Project Design
 
@@ -20,7 +20,7 @@ You can share a request folder along with all its sub-folders and saved requests
 
 To share a folder open up the folder menu \(3 dot menu\) beside it and click `Share`, Select the team and you are done. Now this folder along with all its sub-folders and saved requests under it will appear in the APIC instance of all members of the shared team. Once sharing is complete you will get the option to Un-Share.
 
-![](.gitbook/assets/apic-share-unshare-folder.jpg)Users who now have access to this shared Folder can modify it, add/update/delete Requests, add/update/delete sub-folders.
+![](.gitbook/assets/APIC-share-unshare-folder.jpg)Users who now have access to this shared Folder can modify it, add/update/delete Requests, add/update/delete sub-folders.
 
 ## Sharing a Test Project and Test Suite
 
@@ -34,5 +34,5 @@ Users who now have access to this shared Test Project can add/update/remove Test
 
 Environments module allows you to share and unshare multiple environments at once. To share or unshare environments click on the share or unshare button on the top respectively. Select environments and share/unshare.
 
-![](.gitbook/assets/apic-share-unshare-environments.jpg)Users who now have access to the shared environments can only use them. They can't modify or delete it as environments will be used more frequently and each team member modifying them for their own need will affect others.
+![](.gitbook/assets/APIC-share-unshare-environments.jpg)Users who now have access to the shared environments can only use them. They can't modify or delete it as environments will be used more frequently and each team member modifying them for their own need will affect others.
 

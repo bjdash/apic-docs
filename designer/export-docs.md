@@ -9,7 +9,7 @@ APIC also allows you to export your API design in below formats.
 
 ![](../.gitbook/assets/apic-docs-home%20%281%29.PNG)
 
-![](../.gitbook/assets/apic-export-doc.PNG)
+![](../.gitbook/assets/APIC-export-doc.PNG)
 
 ## What's next?
 

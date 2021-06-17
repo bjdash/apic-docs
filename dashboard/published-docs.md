@@ -12,7 +12,7 @@ To publish a doc, open the desired project in the Designer module and click on t
 
 Once you click on publish you will be taken to the Published Docs section under Dashboard where you can specify the version, URL of your logo, favicon etc. If the styles used for the docs does't suite you then you can override them by adding your own CSS here. Once done click on **Publish** which will publish the docs online and generate the URL for it.
 
-![](../.gitbook/assets/apic-new-published-doc.png)
+![](../.gitbook/assets/apic-new-published-doc%20%281%29.png)
 
 ## Republishing a Doc
 
@@ -22,7 +22,7 @@ Alternatively you can navigate to Dashboard section and select Published Docs fr
 
 Now you can bump up your doc's version and republish it. Republishing will take your latest API specs from the designer and rebuild the docs for you.
 
-![](../.gitbook/assets/re-publish-doc%20%281%29.jpg)![](../.gitbook/assets/apic-published-docs-list%20%281%29.JPG)
+![](../.gitbook/assets/re-publish-doc%20%281%29.jpg)![](../.gitbook/assets/apic-published-docs-list%20%281%29%20%281%29.JPG)
 
 ## Viewing a Published Doc
 

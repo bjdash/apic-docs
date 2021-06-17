@@ -13,6 +13,7 @@
   * [Write API Tests starting from Design Phase](designer/write-api-tests-starting-from-design-phase.md)
   * [API Security Definitions](designer/api-security-definitions.md)
   * [Export and view Docs](designer/export-docs.md)
+  * [Defining additional properties](designer/defining-additional-properties.md)
 * [Tester](tester/README.md)
   * [Make an API call](tester/make-an-api-call.md)
   * [Viewing API Response](tester/decoding-the-response.md)

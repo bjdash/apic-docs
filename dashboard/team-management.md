@@ -4,7 +4,7 @@ APIC allows seamless sharing of API projects, Requests, TestSuites etc with othe
 
 You can see your existing teams here as well as the list of teams you are a member of.
 
-![](../.gitbook/assets/teammanagement%20%281%29.jpg)
+![](../.gitbook/assets/teammanagement%20%281%29%20%281%29.jpg)
 
 ## Creating a Team
 

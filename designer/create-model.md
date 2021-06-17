@@ -4,7 +4,7 @@ Have a schema that you want to reuse in multiple places? Create a Model. Models 
 
 You can create a Model by clicking on the Models option in your Project Home page which will open a view as shown below to fill in the details and create your Model.
 
-![](../.gitbook/assets/apic-create-model.PNG)
+![](../.gitbook/assets/APIC-create-model.PNG)
 
 ## Example
 

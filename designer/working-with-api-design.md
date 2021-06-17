@@ -9,7 +9,7 @@ To start building your API select it from the designer workspace and you will be
 * [Create API Endpoints](create-endpoint.md)
 * [Export and view Docs](export-docs.md)
 
-![](../.gitbook/assets/apic-project-home.PNG)
+![](../.gitbook/assets/APIC-project-home.PNG)
 
 ## Project Setting <a id="proj-setting"></a>
 

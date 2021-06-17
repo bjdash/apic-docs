@@ -10,7 +10,7 @@ Dashboard allows you to do stuff like
 * Create/manage teams
 * Save and share test reports \(Coming soon\)
 
-![](../.gitbook/assets/dashboard%20%281%29.JPG)
+![](../.gitbook/assets/Dashboard%20%281%29.JPG)
 
 ## What's next?
 

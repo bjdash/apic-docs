@@ -8,7 +8,7 @@ You can import headers or query parameters or response code and their schema fro
 
 You can add a path parameter by putting that in the URL as /api/path/{para-param}. Now yo can specify the details of this path param under the path params section.
 
-![](../.gitbook/assets/apic-create-endpoint.PNG)
+![](../.gitbook/assets/apic-create-endpoint%20%281%29.PNG)
 
 ## Endpoint fields
 

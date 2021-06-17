@@ -4,7 +4,7 @@ Once you have saved few requests with few test cases, you can create test suites
 
 To create a test suite first you need to create a Project. To do that switch to the Tests tab in the left panel and click on the + icon. Fill in the project name and click ok. Once you have created the project, you can add test suites in it. To do that hover over the Project name in the left panel and click on the menu icon \(3 dots\). Now you can add new suites by clicking on Add Test Suite and filling in the suite name or clicking on import to import an already exported suite from a file.
 
-![](../.gitbook/assets/apic-new-test-proj.JPG)
+![](../.gitbook/assets/apic-new-test-proj%20%281%29.JPG)
 
 ## Adding requests to suite
 
@@ -24,7 +24,7 @@ You can edit a request \(edit url, query params, headers, data etc\) by clicking
 
 Once your test suite is ready, select the environment you want to use and click on the Run button. This will run your requests one after another and once its finished you can see the run result and test cases in the results panel. If you have used `log()` in your script then you an see them in the **Run Logs** panel in the right.
 
-![](../.gitbook/assets/apic-suit-result%20%281%29.JPG)
+![](../.gitbook/assets/apic-suit-result%20%281%29%20%281%29.JPG)
 
 ### Export Test report <a id="export-test-report"></a>
 

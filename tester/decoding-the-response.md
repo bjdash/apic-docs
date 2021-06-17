@@ -74,7 +74,7 @@ log($response.data.msg);
 log($response.data.errCode);
 ```
 
-![](../.gitbook/assets/apic-resp-logs%20%281%29.JPG)
+![](../.gitbook/assets/apic-resp-logs%20%281%29%20%281%29.JPG)
 
 ## Testing with Saved API Response
 
