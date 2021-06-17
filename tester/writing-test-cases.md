@@ -18,6 +18,10 @@ apic.test('Response should have a field id with value 123456', function(){
 })
 ```
 
+{% hint style="info" %}
+Since all the test scripts are evaluated as Javascript, any error in script will stop further tests from getting executed. To avoid such scenarios use `apic.try`  whenever possible as specified below in this document
+{% endhint %}
+
 ## Apic test APIs and Functions
 
 Apic provides a set of APIs and functions to automate the process of API testing. For example checking the status code, checking if a header is present in the response or not etc.
@@ -34,12 +38,17 @@ To test the response and its properties, apic creates a response object named `$
   * `status {number}` - The http status code for the response. Ex: 200, 404.
   * `statusText {string}` - The http status text for the response. Ex OK, Not found
   * `timeTaken {number}` - Time taken for the request to complete in milliseconds.
+  * `timeTakenStr {stri}` - String representation of time taken for the request to complete. Eg: 600 ms.
+  * `respSize {string}` - String representation of response size. Eg: `20KB`.
+  * `logs {string[]}` - List of log strings added.
 
 ### The request object \($request\)
 
 You can access the details of the request that was sent by using the `$request` variable in your tests. For example the final request url \(`$request.url`\) or the value of a request body \(`$request.body.todoName`\)
 
-* `$request {object}` - The object containing information about the request.
+*  `$request {object}` - The object containing information about the request.
+  * `_id {string}` - The request id of saved requests.
+  * `name {string}` - Name of the saved request, undefined if request is not saved.
   * `url {string}` - This is the final URL to which the request was sent.
   * `method {string}` - The HTTP method used to send the request.
   * `headers {object}` - An object containing information about the headers that were sent in the request. For exaample if your request have an `authorization` header the you can access the value for that in the test with `$request.headers['authorization']`
@@ -48,6 +57,10 @@ You can access the details of the request that was sent by using the `$request` 
     * **JSON body** - If your request payload is a JSON object the apic will automatically convert it to a JSON object and add it to the `$request.body` object
     * **String body** - If your request payload can't be converted to a JSON then `$request.body` will be a string.
     * **form-data/x-www-form-urlencoded** - If you used form-data/x-www-form-urlencoded to send your payload then they will also be converted to an object and added to body. For example if you send a form data as `name=abcd` then `$request.body` will be an object with value `{name: "abcd"}`
+    * **GraphQL** - TODO:.
+  * `prescript {string}` - Pre-run script.
+  * `postscript {string}` - Post-run script.
+  * `respCodes` - Response schemas saved against each status codes.
 
 {% hint style="info" %}
 Note that APIC converts all headers to lower case before sending it and hence should be accessed with their lower case string from $request.headers.  
@@ -91,6 +104,43 @@ Sometimes you may need to send dynamic random data while making API calls. We ha
 * `apic.randomEmail()` - generates valid random email id.
 * `apic.randomInList(list)` - if you want some random values from a list then you can use this function. This will accept a list of anything and will return one entry from the list randomly. Ex: `apic.randomInList([1, 2, 1.111, 'some text', 'etc..'])`.
 * `apic.time()`  - returns the current timestamp
+
+### Error safe script execution <a id="data-function"></a>
+
+Since all the test scripts are evaluated as Javascript, any error in script will stop further tests from getting executed. To avoid such scenarios use apic.try whenever possible. Consider below scenario
+
+```javascript
+let name = $response.user.name
+log(`User name is: ${name}`)
+//If 'user' field  is not in response line 1 will throw error 
+//'Cannot read property 'name' of undefined'
+//This will stop below test from getting executed
+apic.test("Response has header content-type", function(){
+    $response.headers.has("Content-Type")
+})
+```
+
+Safe way to do this is
+
+```javascript
+//Safe way to do above is 
+apic.try(()=>{
+    let name = $response.user.name
+    log(`User name is: ${name}`)
+})
+//or use the optional chaining operator (?.)
+let name = $response.user?.name
+log(`User name is: ${name}`)
+
+//and then
+apic.test("Response has header content-type", function(){
+    $response.headers.has("Content-Type")
+})
+```
+
+{% hint style="info" %}
+Whenever possible use  the [**optional chaining**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) operator \(**`?.`**\) to read the value of a property located deep within a chain of connected objects without having to check that each reference in the chain is valid. 
+{% endhint %}
 
 #### Additional functions
 
