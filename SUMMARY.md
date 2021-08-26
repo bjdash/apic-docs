@@ -26,6 +26,7 @@
   * [Test Websocket](tester/test-websocket.md)
 * [Test Real User Sessions](capture-and-test-api-from-real-user-sessions.md)
 * [APIC Command line interface \(apic-cli\)](apic-command-line-interface-apic-cli.md)
+* [APIC Web Agent \(apic-cli\)](apic-web-agent-apic-cli.md)
 * [APIC CI/CD Integration \(with Jenkins\)](cicd-integration.md)
 * [API Documentation](docs.md)
 * [Simulator](simulator.md)
