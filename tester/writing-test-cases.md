@@ -1,6 +1,6 @@
 # Writing Test Cases
 
-## Writing Tests for your API  with **apic**
+## Writing Tests for your API with **apic**
 
 With apic you not only can you run APIs and view response but also test them by adding test cases for the APIs. You can add test cases to your requests under the Scripts tab in the Request panel. You can add 2 types of scripts; pre-run script which is executed before the request is made and post-run script which is executes after the response is received.
 
@@ -8,7 +8,7 @@ With apic you not only can you run APIs and view response but also test them by 
 
 **JavaScript** is used to write test cases for apic. You can use the popular javascript assertion library [**chaiJs**](https://www.chaijs.com/) to write your tests. Apic provides a wide range of API functions to prepare your test cases. See the entire list of functions available in the sections below.
 
-Use apic.test\(\) to write a test which takes 2 arguments, the first one being the name of the test and the second one a function that contains your assertion logic. If the code inside the test function thorws an error/exception then the test is considered to have failed. Otherwise apic considers the test to be passed. Thats how the assertion in chaiJs works.
+Use apic.test() to write a test which takes 2 arguments, the first one being the name of the test and the second one a function that contains your assertion logic. If the code inside the test function thorws an error/exception then the test is considered to have failed. Otherwise apic considers the test to be passed. Thats how the assertion in chaiJs works.
 
 For example let's say you want to test if the response has a field `id` with the value of say `123456`. Here is what your test would look like:
 
@@ -19,14 +19,14 @@ apic.test('Response should have a field id with value 123456', function(){
 ```
 
 {% hint style="info" %}
-Since all the test scripts are evaluated as Javascript, any error in script will stop further tests from getting executed. To avoid such scenarios use `apic.try`  whenever possible as specified below in this document
+Since all the test scripts are evaluated as Javascript, any error in script will stop further tests from getting executed. To avoid such scenarios use `apic.try` whenever possible as specified below in this document
 {% endhint %}
 
 ## Apic test APIs and Functions
 
 Apic provides a set of APIs and functions to automate the process of API testing. For example checking the status code, checking if a header is present in the response or not etc.
 
-### The response object \($response\)
+### The response object ($response)
 
 To test the response and its properties, apic creates a response object named `$response` that has below properties.
 
@@ -34,7 +34,7 @@ To test the response and its properties, apic creates a response object named `$
   * `body {string}` - The raw string response data received in the response.
   * `data {object}` - If the response can be converted to JSON then apic converts it to a JSON object and stores it under the data property of `$response`. If the response cant be converted to JSON then `$response.data` will be `undefined`. If the API response looks like `{"msg":"Todo created", "id":"1oFrKEGzoSX2raFHR8xR", "name":"SEo378VnqzdVsCF"}` then you can access `name` by using `$response.data.name` in your scripts. Same for `$response.data.id` and `$response.data.msg`.
   * `headers {object}` - `$response.headers` object holds the list of all headers received in the response as properties and header values as the values for the properties. For example to get the value of Content-Type use `$response.headers['Content-Type']`.
-  * `headersStr {string}` - The raw string of headers received in the response \(by default headers are received as a string separated with '\n'\).
+  * `headersStr {string}` - The raw string of headers received in the response (by default headers are received as a string separated with '\n').
   * `status {number}` - The http status code for the response. Ex: 200, 404.
   * `statusText {string}` - The http status text for the response. Ex OK, Not found
   * `timeTaken {number}` - Time taken for the request to complete in milliseconds.
@@ -42,32 +42,32 @@ To test the response and its properties, apic creates a response object named `$
   * `respSize {string}` - String representation of response size. Eg: `20KB`.
   * `logs {string[]}` - List of log strings added.
 
-### The request object \($request\)
+### The request object ($request)
 
-You can access the details of the request that was sent by using the `$request` variable in your tests. For example the final request url \(`$request.url`\) or the value of a request body \(`$request.body.todoName`\)
+You can access the details of the request that was sent by using the `$request` variable in your tests. For example the final request url (`$request.url`) or the value of a request body (`$request.body.todoName`)
 
-*  `$request {object}` - The object containing information about the request.
+* `$request {object}` - The object containing information about the request.
   * `_id {string}` - The request id of saved requests.
   * `name {string}` - Name of the saved request, undefined if request is not saved.
   * `url {string}` - This is the final URL to which the request was sent.
   * `method {string}` - The HTTP method used to send the request.
   * `headers {object}` - An object containing information about the headers that were sent in the request. For exaample if your request have an `authorization` header the you can access the value for that in the test with `$request.headers['authorization']`
   * `queryParams {object}` - An object containing query parameters sent in the request
-  * `body {object/string}` - If your request has a payload body then you can acces that by using `$request.body` in your scripts.
+  *   `body {object/string}` - If your request has a payload body then you can acces that by using `$request.body` in your scripts.
 
-    * **JSON body** - If your request payload is a JSON object the apic will automatically convert it to a JSON object and add it to the `$request.body` object
-    * **String body** - If your request payload can't be converted to a JSON then `$request.body` will be a string.
-    * **form-data/x-www-form-urlencoded** - If you used form-data/x-www-form-urlencoded to send your payload then they will also be converted to an object and added to body. For example if you send a form data as `name=abcd` then `$request.body` will be an object with value `{name: "abcd"}`
-    * **GraphQL** - For graphql requests `$request.body` will contain both the `query` and `variables` with properties of same name.
+      * **JSON body** - If your request payload is a JSON object the apic will automatically convert it to a JSON object and add it to the `$request.body` object
+        * **String body** - If your request payload can't be converted to a JSON then `$request.body` will be a string.
+        * **form-data/x-www-form-urlencoded** - If you used form-data/x-www-form-urlencoded to send your payload then they will also be converted to an object and added to body. For example if you send a form data as `name=abcd` then `$request.body` will be an object with value `{name: "abcd"}`
+        * **GraphQL** - For graphql requests `$request.body` will contain both the `query` and `variables` with properties of same name.
 
-    Graphql body example:`$request.body = {query: "<graphql query string>", variables: {...variables json...}}`
-* `prescript {string}` - Pre-run script.
-* `postscript {string}` - Post-run script.
-* `respCodes` - Response schemas saved against each status codes.
+      Graphql body example:`$request.body = {query: "<graphql query string>", variables: {...variables json...}}`
+  * `prescript {string}` - Pre-run script.
+  * `postscript {string}` - Post-run script.
+  * `respCodes` - Response schemas saved against each status codes.
 
 {% hint style="info" %}
-Note that APIC converts all headers to lower case before sending it and hence should be accessed with their lower case string from $request.headers.  
-Eg: Even if you added a header names **`Test`** while accessing it in the $request object you should be using **`test`**like `$request.headers['test']`
+Note that APIC converts all headers to lower case before sending it and hence should be accessed with their lower case string from $request.headers.\
+Eg: Even if you added a header named **`Test`** while accessing it in the $request object you should be using \*\*`test`\*\* like `$request.headers['test']`
 {% endhint %}
 
 ### Response Schema validation
@@ -98,7 +98,7 @@ apic.test("$response.data.response.id should exist in response", function(){
 })
 ```
 
-### Dynamic data functions <a id="data-function"></a>
+### Dynamic data functions <a href="#data-function" id="data-function"></a>
 
 Sometimes you may need to send dynamic random data while making API calls. We have got you covered. Apic provides a set of functions that you can use while making requests to generate dynamic random data.
 
@@ -106,9 +106,9 @@ Sometimes you may need to send dynamic random data while making API calls. We ha
 * `apic.randomNum(min, max, isFloat)` - generates a random integer number between the min and max value. Sending the third argument isFloat as true will return float/decimal number.
 * `apic.randomEmail()` - generates valid random email id.
 * `apic.randomInList(list)` - if you want some random values from a list then you can use this function. This will accept a list of anything and will return one entry from the list randomly. Ex: `apic.randomInList([1, 2, 1.111, 'some text', 'etc..'])`.
-* `apic.time()`  - returns the current timestamp
+* `apic.time()` - returns the current timestamp
 
-### Error safe script execution <a id="data-function"></a>
+### Error safe script execution <a href="#data-function" id="data-function"></a>
 
 Since all the test scripts are evaluated as Javascript, any error in script will stop further tests from getting executed. To avoid such scenarios use apic.try whenever possible. Consider below scenario
 
@@ -142,12 +142,12 @@ apic.test("Response has header content-type", function(){
 ```
 
 {% hint style="info" %}
-Whenever possible use  the [**optional chaining**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) operator \(**`?.`**\) to read the value of a property located deep within a chain of connected objects without having to check that each reference in the chain is valid. 
+Whenever possible use the [**optional chaining**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional\_chaining) operator (**`?.`**) to read the value of a property located deep within a chain of connected objects without having to check that each reference in the chain is valid.
 {% endhint %}
 
 #### Additional functions
 
-* `Object.has(property, strictMode)` - This function can be called on any Object to check if the specified property exists in the object ot not. Returns `true` or `false`.  By default the check is done by ignoring the case of the property. If you want to make the check case sensitive pass the second argument `strictMode` as `true`. This can be useful to check if a specific header is present in the response or not
+* `Object.has(property, strictMode)` - This function can be called on any Object to check if the specified property exists in the object ot not. Returns `true` or `false`. By default the check is done by ignoring the case of the property. If you want to make the check case sensitive pass the second argument `strictMode` as `true`. This can be useful to check if a specific header is present in the response or not
 
 Ex:
 
@@ -186,4 +186,3 @@ apic.test("Response header Content-Type is application/json", function(){
     expect($response.headers.getValue("content-Type")).to.be.equal("application/json");
 })
 ```
-
